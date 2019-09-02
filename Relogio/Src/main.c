@@ -30,7 +30,6 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -105,6 +104,7 @@ int main(void)
   MX_TIM3_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+  HAL_TIM_Base_Start_IT(&htim3);
 
   /* USER CODE END 2 */
 
@@ -124,18 +124,18 @@ int main(void)
 		//SPRINTF(buffer, "variavel, %d", variavel)
 
 		itoa(hour,Buffer, 10);
-		strcat (timer, Buffer);
+		sprintf(timer + strlen(timer), Buffer);
 
-		strcat (timer, ":");
+		sprintf(timer + strlen(timer), ":");
 
 		itoa(minute, Buffer, 10);
-		strcat (timer, Buffer);
+		sprintf(timer + strlen(timer), Buffer);
 
 
-		strcat (timer, ":");
+		sprintf(timer + strlen(timer), ":");
 
 		itoa(second, Buffer, 10);
-		strcat (timer, Buffer);
+		sprintf(timer + strlen(timer), Buffer);
 
 		if (HAL_UART_Transmit(&huart2, (uint8_t*) timer, 8, 100) != HAL_OK) {
 			Error_Handler();
@@ -299,6 +299,16 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+
+	timer = "teste de interrupção";
+
+	if (HAL_UART_Transmit(&huart2, (uint8_t*) timer, 8, 100) != HAL_OK) {
+		Error_Handler();
+	}
+
+}
 
 /* USER CODE END 4 */
 
