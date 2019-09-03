@@ -4,8 +4,11 @@
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>
+<<<<<<< HEAD
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
 		<item key="size.width" value="837"/>
 		<item key="size.height" value="180"/>
 	</section>
+=======
+>>>>>>> master
 </section>
