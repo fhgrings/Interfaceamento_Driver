@@ -1,0 +1,68 @@
+22:10:02 **** Incremental Build of configuration Debug for project Display ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:114:29: warning: passing argument 2 of 'HAL_SPI_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_SPI_Transmit(&hspi1, &init, 1, 1000);
+                             ^
+In file included from ../Inc/stm32f3xx_hal_conf.h:308:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h:643:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ HAL_StatusTypeDef HAL_SPI_Transmit(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~
+../Src/main.c:115:28: warning: passing argument 2 of 'HAL_SPI_Receive' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_SPI_Receive(&hspi1, &init, 1, 1000);
+                            ^
+In file included from ../Inc/stm32f3xx_hal_conf.h:308:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h:644:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ HAL_StatusTypeDef HAL_SPI_Receive(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~
+../Src/main.c:118:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(init, (uint8_t*)buffer, 10);
+    ^~~~
+../Src/main.c:120:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor lido:", 12, 100);
+                               ^~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:122:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:125:27: warning: pointer targets in passing argument 3 of 'LCD_Write_String' differ in signedness [-Wpointer-sign]
+    LCD_Write_String(0, 0, buffer);
+                           ^~~~~~
+In file included from ../Src/main.c:27:0:
+../Inc/user_5110.h:28:6: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void LCD_Write_String(uint8_t PosX, uint8_t PosY, char * str);
+      ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Display.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\Display\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Display.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Display.elf
+ 
+arm-none-eabi-objdump -h -S  Display.elf  > "Display.list"
+arm-none-eabi-size   Display.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14740	     20	   1836	  16596	   40d4	Display.elf
+Finished building: default.size.stdout
+ 
+Finished building: Display.list
+ 
+
+22:10:05 Build Finished. 0 errors, 6 warnings. (took 2s.638ms)
+
