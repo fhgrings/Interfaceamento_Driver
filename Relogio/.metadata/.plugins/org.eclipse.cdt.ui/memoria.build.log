@@ -1,0 +1,10 @@
+20:57:12 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13700	     20	   1868	  15588	   3ce4	memoria.elf
+Finished building: default.size.stdout
+ 
+
+20:57:14 Build Finished. 0 errors, 0 warnings. (took 2s.138ms)
+

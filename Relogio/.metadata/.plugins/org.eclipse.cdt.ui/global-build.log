@@ -850,3 +850,1784 @@ Finished building: default.size.stdout
 Finished building: SPI.list
 >>>>>>> master
  
+13:30:32 **** Clean-only build of configuration Debug for project MedidorBateria ****
+make -j8 clean 
+rm -rf *
+ 
+13:30:34 **** Build of configuration Debug for project MedidorBateria ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -I../ -x assembler-with-cpp --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32l432kcux.o" "../Startup/startup_stm32l432kcux.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/stm32l4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32l4xx_hal_msp.d" -MT"Src/stm32l4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32l4xx_hal_msp.o"
+arm-none-eabi-gcc "../Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32l4xx_it.d" -MT"Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32l4xx_it.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32l4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/system_stm32l4xx.d" -MT"Src/system_stm32l4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/system_stm32l4xx.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_comp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_comp.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_comp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_comp.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o"
+arm-none-eabi-gcc -o "MedidorBateria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Bateria\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MedidorBateria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MedidorBateria.elf
+ 
+arm-none-eabi-size   MedidorBateria.elf 
+arm-none-eabi-objdump -h -S  MedidorBateria.elf  > "MedidorBateria.list"
+   text	   data	    bss	    dec	    hex	filename
+  28648	     20	   2700	  31368	   7a88	MedidorBateria.elf
+Finished building: default.size.stdout
+ 
+Finished building: MedidorBateria.list
+ 
+14:34:28 **** Incremental Build of configuration Debug for project MedidorBateria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MedidorBateria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Bateria\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MedidorBateria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MedidorBateria.elf
+ 
+arm-none-eabi-objdump -h -S  MedidorBateria.elf  > "MedidorBateria.list"
+arm-none-eabi-size   MedidorBateria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28648	     20	   2700	  31368	   7a88	MedidorBateria.elf
+Finished building: default.size.stdout
+ 
+Finished building: MedidorBateria.list
+ 
+14:36:27 **** Incremental Build of configuration Debug for project MedidorBateria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MedidorBateria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Bateria\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MedidorBateria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MedidorBateria.elf
+ 
+arm-none-eabi-objdump -h -S  MedidorBateria.elf  > "MedidorBateria.list"
+arm-none-eabi-size   MedidorBateria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28648	     20	   2700	  31368	   7a88	MedidorBateria.elf
+Finished building: default.size.stdout
+ 
+Finished building: MedidorBateria.list
+ 
+14:39:01 **** Incremental Build of configuration Debug for project MedidorBateria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MedidorBateria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Bateria\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MedidorBateria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MedidorBateria.elf
+ 
+arm-none-eabi-objdump -h -S  MedidorBateria.elf  > "MedidorBateria.list"
+arm-none-eabi-size   MedidorBateria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28648	     20	   2700	  31368	   7a88	MedidorBateria.elf
+Finished building: default.size.stdout
+ 
+Finished building: MedidorBateria.list
+ 
+14:40:44 **** Incremental Build of configuration Debug for project MedidorBateria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MedidorBateria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Bateria\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MedidorBateria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MedidorBateria.elf
+ 
+arm-none-eabi-objdump -h -S  MedidorBateria.elf  > "MedidorBateria.list"
+arm-none-eabi-size   MedidorBateria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28648	     20	   2700	  31368	   7a88	MedidorBateria.elf
+Finished building: default.size.stdout
+ 
+Finished building: MedidorBateria.list
+ 
+14:41:58 **** Incremental Build of configuration Debug for project MedidorBateria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MedidorBateria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Bateria\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MedidorBateria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MedidorBateria.elf
+ 
+arm-none-eabi-objdump -h -S  MedidorBateria.elf  > "MedidorBateria.list"
+arm-none-eabi-size   MedidorBateria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28648	     20	   2700	  31368	   7a88	MedidorBateria.elf
+Finished building: default.size.stdout
+ 
+Finished building: MedidorBateria.list
+ 
+14:51:34 **** Incremental Build of configuration Debug for project MedidorBateria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MedidorBateria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Bateria\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MedidorBateria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MedidorBateria.elf
+ 
+arm-none-eabi-objdump -h -S  MedidorBateria.elf  > "MedidorBateria.list"
+arm-none-eabi-size   MedidorBateria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28648	     20	   3020	  31688	   7bc8	MedidorBateria.elf
+Finished building: default.size.stdout
+ 
+Finished building: MedidorBateria.list
+ 
+14:55:18 **** Incremental Build of configuration Debug for project MedidorBateria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MedidorBateria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Bateria\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MedidorBateria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MedidorBateria.elf
+ 
+arm-none-eabi-objdump -h -S  MedidorBateria.elf  > "MedidorBateria.list"
+arm-none-eabi-size   MedidorBateria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28648	     20	   3180	  31848	   7c68	MedidorBateria.elf
+Finished building: default.size.stdout
+ 
+Finished building: MedidorBateria.list
+ 
+14:58:39 **** Incremental Build of configuration Debug for project MedidorBateria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MedidorBateria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Bateria\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MedidorBateria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MedidorBateria.elf
+ 
+arm-none-eabi-objdump -h -S  MedidorBateria.elf  > "MedidorBateria.list"
+arm-none-eabi-size   MedidorBateria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28648	     20	   3180	  31848	   7c68	MedidorBateria.elf
+Finished building: default.size.stdout
+ 
+Finished building: MedidorBateria.list
+ 
+15:00:26 **** Incremental Build of configuration Debug for project MedidorBateria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MedidorBateria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Bateria\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MedidorBateria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MedidorBateria.elf
+ 
+arm-none-eabi-objdump -h -S  MedidorBateria.elf  > "MedidorBateria.list"
+arm-none-eabi-size   MedidorBateria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28648	     20	   3180	  31848	   7c68	MedidorBateria.elf
+Finished building: default.size.stdout
+ 
+Finished building: MedidorBateria.list
+ 
+22:00:20 **** Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f334r8tx.o" "../Startup/startup_stm32f334r8tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/stm32f3xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32f3xx_hal_msp.d" -MT"Src/stm32f3xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f3xx_hal_msp.o"
+arm-none-eabi-gcc "../Src/stm32f3xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32f3xx_it.d" -MT"Src/stm32f3xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32f3xx_it.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f3xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/system_stm32f3xx.d" -MT"Src/system_stm32f3xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/system_stm32f3xx.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.d" -MT"Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.o"
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-size   memoria.elf 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+   text	   data	    bss	    dec	    hex	filename
+  10848	     20	   1756	  12624	   3150	memoria.elf
+Finished building: default.size.stdout
+ 
+Finished building: memoria.list
+ 
+22:00:46 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:69:1: warning: data definition has no type or storage class
+ data[0] = 0x00;
+ ^~~~
+../Src/main.c:69:1: warning: type defaults to 'int' in declaration of 'data' [-Wimplicit-int]
+../Src/main.c:69:1: error: conflicting types for 'data'
+../Src/main.c:65:9: note: previous declaration of 'data' was here
+ uint8_t data[3];
+         ^~~~
+../Src/main.c:69:11: error: invalid initializer
+ data[0] = 0x00;
+           ^~~~
+../Src/main.c:70:1: warning: data definition has no type or storage class
+ data[1] = 0x01;
+ ^~~~
+../Src/main.c:70:1: warning: type defaults to 'int' in declaration of 'data' [-Wimplicit-int]
+../Src/main.c:70:1: error: conflicting types for 'data'
+../Src/main.c:65:9: note: previous declaration of 'data' was here
+ uint8_t data[3];
+         ^~~~
+../Src/main.c:70:11: error: invalid initializer
+ data[1] = 0x01;
+           ^~~~
+../Src/main.c:71:1: warning: data definition has no type or storage class
+ data[2] = 0x10;
+ ^~~~
+../Src/main.c:71:1: warning: type defaults to 'int' in declaration of 'data' [-Wimplicit-int]
+../Src/main.c:71:1: error: conflicting types for 'data'
+../Src/main.c:65:9: note: previous declaration of 'data' was here
+ uint8_t data[3];
+         ^~~~
+../Src/main.c:71:11: error: invalid initializer
+ data[2] = 0x10;
+           ^~~~
+../Src/main.c: In function 'main':
+../Src/main.c:118:53: warning: passing argument 3 of 'HAL_I2C_Master_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_I2C_Master_Transmit(&hi2c1, EEPROM_ADDRESS , data, 3, 1000);
+                                                     ^~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:541:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:119:35: error: 'EEPROM_' undeclared (first use in this function)
+    HAL_I2C_Master_Receive(&hi2c1, EEPROM_ ADDRESS, &recebido, 1, 1000);
+                                   ^~~~~~~
+../Src/main.c:119:35: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:119:43: error: expected ')' before 'ADDRESS'
+    HAL_I2C_Master_Receive(&hi2c1, EEPROM_ ADDRESS, &recebido, 1, 1000);
+                                           ^~~~~~~
+../Src/main.c:119:4: error: too few arguments to function 'HAL_I2C_Master_Receive'
+    HAL_I2C_Master_Receive(&hi2c1, EEPROM_ ADDRESS, &recebido, 1, 1000);
+    ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:542:19: note: declared here
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:121:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data, (uint8_t*)buffer1, 10);
+    ^~~~
+../Src/main.c:122:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 100);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:123:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                  ^~~~~~
+../Src/main.c:123:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:123:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:123:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                         ^~~~~~~
+../Src/main.c:123:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:124:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:128:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 100);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:129:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 100);
+                                                         ^~~~~~~
+../Src/main.c:129:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:130:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:33: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:01:43 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:69:1: warning: data definition has no type or storage class
+ data[0] = 0x00;
+ ^~~~
+../Src/main.c:69:1: warning: type defaults to 'int' in declaration of 'data' [-Wimplicit-int]
+../Src/main.c:69:1: error: conflicting types for 'data'
+../Src/main.c:65:9: note: previous declaration of 'data' was here
+ uint8_t data[3];
+         ^~~~
+../Src/main.c:69:11: error: invalid initializer
+ data[0] = 0x00;
+           ^~~~
+../Src/main.c:70:1: warning: data definition has no type or storage class
+ data[1] = 0x01;
+ ^~~~
+../Src/main.c:70:1: warning: type defaults to 'int' in declaration of 'data' [-Wimplicit-int]
+../Src/main.c:70:1: error: conflicting types for 'data'
+../Src/main.c:65:9: note: previous declaration of 'data' was here
+ uint8_t data[3];
+         ^~~~
+../Src/main.c:70:11: error: invalid initializer
+ data[1] = 0x01;
+           ^~~~
+../Src/main.c:71:1: warning: data definition has no type or storage class
+ data[2] = 0x10;
+ ^~~~
+../Src/main.c:71:1: warning: type defaults to 'int' in declaration of 'data' [-Wimplicit-int]
+../Src/main.c:71:1: error: conflicting types for 'data'
+../Src/main.c:65:9: note: previous declaration of 'data' was here
+ uint8_t data[3];
+         ^~~~
+../Src/main.c:71:11: error: invalid initializer
+ data[2] = 0x10;
+           ^~~~
+../Src/main.c: In function 'main':
+../Src/main.c:118:53: warning: passing argument 3 of 'HAL_I2C_Master_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_I2C_Master_Transmit(&hi2c1, EEPROM_ADDRESS , data, 3, 1000);
+                                                     ^~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:541:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:119:51: warning: passing argument 3 of 'HAL_I2C_Master_Receive' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_I2C_Master_Receive(&hi2c1, EEPROM_ADDRESS, &recebido, 1, 1000);
+                                                   ^
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:542:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[1] {aka unsigned char (*)[1]}'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:121:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data, (uint8_t*)buffer1, 10);
+    ^~~~
+../Src/main.c:122:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 100);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:123:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                  ^~~~~~
+../Src/main.c:123:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:123:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:123:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                         ^~~~~~~
+../Src/main.c:123:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:124:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:128:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 100);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:129:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 100);
+                                                         ^~~~~~~
+../Src/main.c:129:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:130:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:33: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:03:46 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:69:1: warning: data definition has no type or storage class
+ data[0] = 0;
+ ^~~~
+../Src/main.c:69:1: warning: type defaults to 'int' in declaration of 'data' [-Wimplicit-int]
+../Src/main.c:69:1: error: conflicting types for 'data'
+../Src/main.c:65:9: note: previous declaration of 'data' was here
+ uint8_t data[3];
+         ^~~~
+../Src/main.c:69:11: error: invalid initializer
+ data[0] = 0;
+           ^
+../Src/main.c:70:1: warning: data definition has no type or storage class
+ data[1] = 1;
+ ^~~~
+../Src/main.c:70:1: warning: type defaults to 'int' in declaration of 'data' [-Wimplicit-int]
+../Src/main.c:70:1: error: conflicting types for 'data'
+../Src/main.c:65:9: note: previous declaration of 'data' was here
+ uint8_t data[3];
+         ^~~~
+../Src/main.c:70:11: error: invalid initializer
+ data[1] = 1;
+           ^
+../Src/main.c:71:1: warning: data definition has no type or storage class
+ data[2] = 2;
+ ^~~~
+../Src/main.c:71:1: warning: type defaults to 'int' in declaration of 'data' [-Wimplicit-int]
+../Src/main.c:71:1: error: conflicting types for 'data'
+../Src/main.c:65:9: note: previous declaration of 'data' was here
+ uint8_t data[3];
+         ^~~~
+../Src/main.c:71:11: error: invalid initializer
+ data[2] = 2;
+           ^
+../Src/main.c: In function 'main':
+../Src/main.c:118:53: warning: passing argument 3 of 'HAL_I2C_Master_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_I2C_Master_Transmit(&hi2c1, EEPROM_ADDRESS , data, 3, 1000);
+                                                     ^~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:541:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:119:51: warning: passing argument 3 of 'HAL_I2C_Master_Receive' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_I2C_Master_Receive(&hi2c1, EEPROM_ADDRESS, &recebido, 1, 1000);
+                                                   ^
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:542:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[1] {aka unsigned char (*)[1]}'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:121:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data, (uint8_t*)buffer1, 10);
+    ^~~~
+../Src/main.c:122:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 100);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:123:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                  ^~~~~~
+../Src/main.c:123:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:123:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:123:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                         ^~~~~~~
+../Src/main.c:123:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:124:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:128:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 100);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:129:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 100);
+                                                         ^~~~~~~
+../Src/main.c:129:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:130:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:33: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:04:27 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:69:1: warning: data definition has no type or storage class
+ data[0] = 0;
+ ^~~~
+../Src/main.c:69:1: warning: type defaults to 'int' in declaration of 'data' [-Wimplicit-int]
+../Src/main.c:69:1: error: conflicting types for 'data'
+../Src/main.c:65:6: note: previous declaration of 'data' was here
+ char data[3];
+      ^~~~
+../Src/main.c:69:11: error: invalid initializer
+ data[0] = 0;
+           ^
+../Src/main.c:70:1: warning: data definition has no type or storage class
+ data[1] = 1;
+ ^~~~
+../Src/main.c:70:1: warning: type defaults to 'int' in declaration of 'data' [-Wimplicit-int]
+../Src/main.c:70:1: error: conflicting types for 'data'
+../Src/main.c:65:6: note: previous declaration of 'data' was here
+ char data[3];
+      ^~~~
+../Src/main.c:70:11: error: invalid initializer
+ data[1] = 1;
+           ^
+../Src/main.c:71:1: warning: data definition has no type or storage class
+ data[2] = 2;
+ ^~~~
+../Src/main.c:71:1: warning: type defaults to 'int' in declaration of 'data' [-Wimplicit-int]
+../Src/main.c:71:1: error: conflicting types for 'data'
+../Src/main.c:65:6: note: previous declaration of 'data' was here
+ char data[3];
+      ^~~~
+../Src/main.c:71:11: error: invalid initializer
+ data[2] = 2;
+           ^
+../Src/main.c: In function 'main':
+../Src/main.c:118:53: warning: passing argument 3 of 'HAL_I2C_Master_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_I2C_Master_Transmit(&hi2c1, EEPROM_ADDRESS , data, 3, 1000);
+                                                     ^~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:541:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:119:51: warning: passing argument 3 of 'HAL_I2C_Master_Receive' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_I2C_Master_Receive(&hi2c1, EEPROM_ADDRESS, &recebido, 1, 1000);
+                                                   ^
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:542:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[1] {aka unsigned char (*)[1]}'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:121:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data, (uint8_t*)buffer1, 10);
+    ^~~~
+../Src/main.c:122:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 100);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:123:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                  ^~~~~~
+../Src/main.c:123:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:123:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:123:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                         ^~~~~~~
+../Src/main.c:123:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:124:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:128:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 100);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:129:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 100);
+                                                         ^~~~~~~
+../Src/main.c:129:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:130:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:33: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:05:25 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:120:53: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_I2C_Master_Transmit(&hi2c1, EEPROM_ADDRESS , data, 3, 1000);
+                                                     ^~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:541:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:121:51: warning: passing argument 3 of 'HAL_I2C_Master_Receive' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_I2C_Master_Receive(&hi2c1, EEPROM_ADDRESS, &recebido, 1, 1000);
+                                                   ^
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:542:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[1] {aka unsigned char (*)[1]}'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:123:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data, (uint8_t*)buffer1, 10);
+    ^~~~
+../Src/main.c:124:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 100);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:125:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                  ^~~~~~
+../Src/main.c:125:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:125:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:125:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                         ^~~~~~~
+../Src/main.c:125:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:126:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:130:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 100);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:131:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 100);
+                                                         ^~~~~~~
+../Src/main.c:131:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:132:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13648	     20	   1868	  15536	   3cb0	memoria.elf
+Finished building: default.size.stdout
+ 
+Finished building: memoria.list
+ 
+22:05:58 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:121:51: warning: passing argument 3 of 'HAL_I2C_Master_Receive' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_I2C_Master_Receive(&hi2c1, EEPROM_ADDRESS, &recebido, 1, 1000);
+                                                   ^
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:542:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[1] {aka unsigned char (*)[1]}'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:123:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data, (uint8_t*)buffer1, 10);
+    ^~~~
+../Src/main.c:124:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 100);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:125:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                  ^~~~~~
+../Src/main.c:125:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:125:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:125:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                         ^~~~~~~
+../Src/main.c:125:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:126:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:130:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 100);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:131:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 100);
+                                                         ^~~~~~~
+../Src/main.c:131:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:132:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13648	     20	   1868	  15536	   3cb0	memoria.elf
+Finished building: default.size.stdout
+ 
+Finished building: memoria.list
+ 
+22:08:01 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13648	     20	   1868	  15536	   3cb0	memoria.elf
+Finished building: default.size.stdout
+ 
+22:08:57 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:121:51: warning: passing argument 3 of 'HAL_I2C_Master_Receive' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_I2C_Master_Receive(&hi2c1, EEPROM_ADDRESS, &recebido, 1, 1000);
+                                                   ^
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:542:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[1] {aka unsigned char (*)[1]}'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:123:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data, (uint8_t*)buffer1, 10);
+    ^~~~
+../Src/main.c:124:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 100);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:125:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                  ^~~~~~
+../Src/main.c:125:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:125:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:125:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                         ^~~~~~~
+../Src/main.c:125:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:126:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:130:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 100);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:131:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 100);
+                                                         ^~~~~~~
+../Src/main.c:131:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:132:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13648	     20	   1868	  15536	   3cb0	memoria.elf
+Finished building: default.size.stdout
+ 
+Finished building: memoria.list
+ 
+22:10:20 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13648	     20	   1868	  15536	   3cb0	memoria.elf
+Finished building: default.size.stdout
+ 
+22:11:51 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:121:51: warning: passing argument 3 of 'HAL_I2C_Master_Receive' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_I2C_Master_Receive(&hi2c1, EEPROM_ADDRESS, &recebido, 1, 1000);
+                                                   ^
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:542:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[1] {aka unsigned char (*)[1]}'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:123:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data, (uint8_t*)buffer1, 2);
+    ^~~~
+../Src/main.c:124:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 100);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:125:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                  ^~~~~~
+../Src/main.c:125:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:125:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:125:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                         ^~~~~~~
+../Src/main.c:125:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:126:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:130:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 100);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:131:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 100);
+                                                         ^~~~~~~
+../Src/main.c:131:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:132:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13648	     20	   1868	  15536	   3cb0	memoria.elf
+Finished building: default.size.stdout
+ 
+Finished building: memoria.list
+ 
+22:14:17 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:121:51: warning: passing argument 3 of 'HAL_I2C_Master_Receive' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_I2C_Master_Receive(&hi2c1, EEPROM_ADDRESS, &recebido, 1, 1000);
+                                                   ^
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:542:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[1] {aka unsigned char (*)[1]}'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:123:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data[3], (uint8_t*)buffer1, 2);
+    ^~~~
+../Src/main.c:124:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 100);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:125:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                  ^~~~~~
+../Src/main.c:125:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:125:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:125:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                         ^~~~~~~
+../Src/main.c:125:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:126:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:130:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 100);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:131:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 100);
+                                                         ^~~~~~~
+../Src/main.c:131:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:132:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13652	     20	   1868	  15540	   3cb4	memoria.elf
+Finished building: default.size.stdout
+ 
+Finished building: memoria.list
+ 
+22:14:46 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:121:51: warning: passing argument 3 of 'HAL_I2C_Master_Receive' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_I2C_Master_Receive(&hi2c1, EEPROM_ADDRESS, &recebido, 1, 1000);
+                                                   ^
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:542:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[1] {aka unsigned char (*)[1]}'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:123:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data[2], (uint8_t*)buffer1, 10);
+    ^~~~
+../Src/main.c:124:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 100);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:125:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                  ^~~~~~
+../Src/main.c:125:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:125:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:125:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                         ^~~~~~~
+../Src/main.c:125:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:126:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:130:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 100);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:131:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 100);
+                                                         ^~~~~~~
+../Src/main.c:131:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:132:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13652	     20	   1868	  15540	   3cb4	memoria.elf
+Finished building: default.size.stdout
+ 
+Finished building: memoria.list
+ 
+22:15:57 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:123:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data[2], (uint8_t*)buffer1, 10);
+    ^~~~
+../Src/main.c:124:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 100);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:125:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                  ^~~~~~
+../Src/main.c:125:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:125:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:125:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 100);
+                                                         ^~~~~~~
+../Src/main.c:125:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:126:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:130:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 100);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:131:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 100);
+                                                         ^~~~~~~
+../Src/main.c:131:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:132:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 100);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13656	     20	   1868	  15544	   3cb8	memoria.elf
+Finished building: default.size.stdout
+ 
+Finished building: memoria.list
+ 
+20:05:33 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13656	     20	   1868	  15544	   3cb8	memoria.elf
+Finished building: default.size.stdout
+ 
+20:14:23 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:124:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data[2], (uint8_t*)buffer1, 10);
+    ^~~~
+../Src/main.c:125:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 1000);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:126:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 1000);
+                                                  ^~~~~~
+../Src/main.c:126:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:126:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:126:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 1000);
+                                                         ^~~~~~~
+../Src/main.c:126:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:127:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 1000);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:131:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 1000);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:132:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 1000);
+                                                         ^~~~~~~
+../Src/main.c:132:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:133:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 1000);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13684	     20	   1868	  15572	   3cd4	memoria.elf
+Finished building: default.size.stdout
+ 
+Finished building: memoria.list
+ 
+20:20:27 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:121:51: warning: passing argument 3 of 'HAL_I2C_Master_Receive' from incompatible pointer type [-Wincompatible-pointer-types]
+    HAL_I2C_Master_Receive(&hi2c1, EEPROM_ADDRESS, &recebido, 1, 1000);
+                                                   ^
+In file included from ../Inc/stm32f3xx_hal_conf.h:264:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:542:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[1] {aka unsigned char (*)[1]}'
+ HAL_StatusTypeDef HAL_I2C_Master_Receive(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:123:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data[2], (uint8_t*)buffer1, 10);
+    ^~~~
+../Src/main.c:124:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 1000);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:125:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 1000);
+                                                  ^~~~~~
+../Src/main.c:125:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:125:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:125:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 1000);
+                                                         ^~~~~~~
+../Src/main.c:125:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:126:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 1000);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:130:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 1000);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:131:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 1000);
+                                                         ^~~~~~~
+../Src/main.c:131:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:132:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 1000);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13664	     20	   1868	  15552	   3cc0	memoria.elf
+Finished building: default.size.stdout
+ 
+Finished building: memoria.list
+ 
+20:23:03 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:126:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data[2], (uint8_t*)buffer1, 10);
+    ^~~~
+../Src/main.c:127:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 1000);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:128:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 1000);
+                                                  ^~~~~~
+../Src/main.c:128:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:128:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:128:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 1000);
+                                                         ^~~~~~~
+../Src/main.c:128:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:129:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 1000);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:133:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 1000);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:134:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 1000);
+                                                         ^~~~~~~
+../Src/main.c:134:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:135:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 1000);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13676	     20	   1868	  15564	   3ccc	memoria.elf
+Finished building: default.size.stdout
+ 
+Finished building: memoria.list
+ 
+20:24:24 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:128:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data[2], (uint8_t*)buffer1, 10);
+    ^~~~
+../Src/main.c:129:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 1000);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:130:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 1000);
+                                                  ^~~~~~
+../Src/main.c:130:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:130:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:130:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 1000);
+                                                         ^~~~~~~
+../Src/main.c:130:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:131:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 1000);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:135:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 1000);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:136:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 1000);
+                                                         ^~~~~~~
+../Src/main.c:136:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:137:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 1000);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13700	     20	   1868	  15588	   3ce4	memoria.elf
+Finished building: default.size.stdout
+ 
+Finished building: memoria.list
+ 
+20:28:52 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:128:12: error: 'Buffer' undeclared (first use in this function); did you mean 'buffer2'?
+    sprintf(Buffer,"Dado: %d\r\n",recebido);
+            ^~~~~~
+            buffer2
+../Src/main.c:128:12: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:130:37: error: 'Buffer1' undeclared (first use in this function); did you mean 'Buffer'?
+    HAL_UART_Transmit(&huart2,(char*)Buffer1, 50, 1000)!= HAL_OK;
+                                     ^~~~~~~
+                                     Buffer
+make: *** [Src/subdir.mk:33: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:29:22 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:128:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    sprintf(buffer1,"Dado: %d\r\n",recebido);
+            ^~~~~~~
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from ../Inc/stm32f3xx_hal_conf.h:196,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+c:\st\stm32cubeide_1.0.2\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.0.0.201904181610\tools\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int sprintf (char *__restrict, const char *__restrict, ...)
+     ^~~~~~~
+../Src/main.c:130:30: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2,(char*)buffer1, 50, 1000)!= HAL_OK;
+                              ^
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:130:55: warning: value computed is not used [-Wunused-value]
+    HAL_UART_Transmit(&huart2,(char*)buffer1, 50, 1000)!= HAL_OK;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15696	    120	   1880	  17696	   4520	memoria.elf
+Finished building: default.size.stdout
+ 
+Finished building: memoria.list
+ 
+20:30:58 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:130:30: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2,(char*)Buffer, 50, 1000)!= HAL_OK;
+                              ^
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:130:54: warning: value computed is not used [-Wunused-value]
+    HAL_UART_Transmit(&huart2,(char*)Buffer, 50, 1000)!= HAL_OK;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15704	    120	   1776	  17600	   44c0	memoria.elf
+Finished building: default.size.stdout
+Finished building: memoria.list
+ 
+ 
+20:31:11 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15704	    120	   1776	  17600	   44c0	memoria.elf
+Finished building: default.size.stdout
+ 
+20:37:13 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15704	    120	   1776	  17600	   44c0	memoria.elf
+Finished building: default.size.stdout
+ 
+20:44:35 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:128:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    sprintf(buffer1,"Dado: %d\r\n",recebido);
+            ^~~~~~~
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from ../Inc/stm32f3xx_hal_conf.h:196,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+c:\st\stm32cubeide_1.0.2\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.0.0.201904181610\tools\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int sprintf (char *__restrict, const char *__restrict, ...)
+     ^~~~~~~
+../Src/main.c:130:30: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2,(char*)buffer1, 50, 1000)!= HAL_OK;
+                              ^
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:130:55: warning: value computed is not used [-Wunused-value]
+    HAL_UART_Transmit(&huart2,(char*)buffer1, 50, 1000)!= HAL_OK;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15696	    120	   1880	  17696	   4520	memoria.elf
+Finished building: default.size.stdout
+ 
+Finished building: memoria.list
+ 
+20:45:28 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:128:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(data[2], (uint8_t*)buffer1, 10);
+    ^~~~
+../Src/main.c:129:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 1000);
+                               ^~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:130:50: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 1000);
+                                                  ^~~~~~
+../Src/main.c:130:50: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:130:50: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:130:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 1000);
+                                                         ^~~~~~~
+../Src/main.c:130:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:131:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 1000);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:135:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 1000);
+                               ^~~~~~~~~~~~~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c:136:57: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 1000);
+                                                         ^~~~~~~
+../Src/main.c:136:57: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:137:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, "\n\r", 2, 1000);
+                               ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: memoria.elf
+ 
+arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13700	     20	   1868	  15588	   3ce4	memoria.elf
+Finished building: default.size.stdout
+ 
+Finished building: memoria.list
+ 
+20:48:43 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13700	     20	   1868	  15588	   3ce4	memoria.elf
+Finished building: default.size.stdout
+ 
+20:57:12 **** Incremental Build of configuration Debug for project memoria ****
+make -j8 all 
+arm-none-eabi-size   memoria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13700	     20	   1868	  15588	   3ce4	memoria.elf
+Finished building: default.size.stdout
+ 

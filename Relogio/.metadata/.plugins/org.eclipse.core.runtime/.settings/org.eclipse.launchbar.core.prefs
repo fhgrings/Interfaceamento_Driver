@@ -1,11 +1,12 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=master
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-<<<<<<< HEAD
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:Timer_test.elf,org.eclipse.launchbar.core.descriptorType.default\:Display.elf
-=======
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:Timer_test.elf,org.eclipse.launchbar.core.descriptorType.default\:SPI.elf
->>>>>>> master
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Display.elf,org.eclipse.launchbar.core.descriptorType.default\:MedidorBateria.elf,org.eclipse.launchbar.core.descriptorType.default\:Timer_test.elf,org.eclipse.launchbar.core.descriptorType.default\:memoria.elf
 eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Display.elf/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Display.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:Timer_test.elf/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:Timer_test.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

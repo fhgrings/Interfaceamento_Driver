@@ -1,0 +1,17 @@
+15:00:26 **** Incremental Build of configuration Debug for project MedidorBateria ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L432xx -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "MedidorBateria.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Bateria\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MedidorBateria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MedidorBateria.elf
+ 
+arm-none-eabi-objdump -h -S  MedidorBateria.elf  > "MedidorBateria.list"
+arm-none-eabi-size   MedidorBateria.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28648	     20	   3180	  31848	   7c68	MedidorBateria.elf
+Finished building: default.size.stdout
+ 
+Finished building: MedidorBateria.list
+ 
+
+15:00:31 Build Finished. 0 errors, 0 warnings. (took 5s.392ms)
+
