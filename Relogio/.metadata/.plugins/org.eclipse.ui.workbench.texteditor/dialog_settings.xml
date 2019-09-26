@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="UART"/>
+		<item key="selection" value="S1_Pin"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="S1_Pin"/>
+			<item value="callback"/>
+			<item value="call"/>
+			<item value="callba"/>
+			<item value="PIN_13"/>
+			<item value="B1_Pin"/>
+			<item value="B1_Fin"/>
+			<item value="GPIO"/>
+			<item value="buffer"/>
+			<item value="spri"/>
 			<item value="uart"/>
 			<item value="htim6"/>
 		</list>

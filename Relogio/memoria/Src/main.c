@@ -62,10 +62,9 @@ static void MX_I2C1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t data[3];
-uint8_t buffer1[50];
-uint8_t buffer2[50];
-uint8_t recebido;
+uint8_t data[5]; // Dado para cada posicao de memoria
+int flag = 0;
+char result[40];
 
 
 
@@ -113,31 +112,20 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  data[0] = 0;
-	  data[1] = 1;
-	  data[2] = 5;
-
-	  HAL_I2C_Master_Transmit(&hi2c1, EEPROM_ADDRESS , data, 3, 1000);
-	  HAL_Delay(500);
 	  HAL_I2C_Master_Transmit(&hi2c1, EEPROM_ADDRESS , data, 2, 1000);
 	  HAL_Delay(500);
-	  HAL_I2C_Master_Receive(&hi2c1, EEPROM_ADDRESS, &recebido, 1, 1000);
+	  HAL_I2C_Master_Receive(&hi2c1, EEPROM_ADDRESS , &data[2], 3, 1000);
 
-	//  sprintf(timer,"%d:%d:%d\r\n", hour, minute, second);
+	  sprintf(result,"Data 1: %d\r\nData 2: %d\r\nData 3: %d\r\n", data[2],data[3],data[4]);
 
-	  itoa(data[2], (uint8_t*)buffer1, 10);
-	  HAL_UART_Transmit(&huart2, "Valor enviado:", 12, 1000);
-	  HAL_UART_Transmit(&huart2, (uint8_t*)buffer1, strlen(buffer1), 1000);
-	  HAL_UART_Transmit(&huart2, "\n\r", 2, 1000);
-	  HAL_Delay(1000);
-
-	  itoa(recebido, (uint8_t*)buffer2, 10);
-	  HAL_UART_Transmit(&huart2, "Valor recebido:", 12, 1000);
-	  HAL_UART_Transmit(&huart2, (uint8_t*)buffer2, strlen(buffer2), 1000);
-	  HAL_UART_Transmit(&huart2, "\n\r", 2, 1000);
+	  HAL_UART_Transmit(&huart2, result, strlen(result), 1000);
 	  HAL_Delay(1000);
 
 
+	  if(flag == 1) {
+		HAL_I2C_Master_Transmit(&hi2c1, EEPROM_ADDRESS , data, 5, 1000);
+		flag = 0;
+	  }
   }
   /* USER CODE END 3 */
 }
@@ -297,9 +285,52 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
 
+  /*Configure GPIO pins : S3_Pin S1_Pin */
+  GPIO_InitStruct.Pin = S3_Pin|S1_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : S2_Pin */
+  GPIO_InitStruct.Pin = S2_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(S2_GPIO_Port, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI4_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI4_IRQn);
+
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+
 }
 
 /* USER CODE BEGIN 4 */
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	if(GPIO_Pin == B1_Pin){
+		data[2] = 0;
+		data[3] = 0;
+		data[4] = 0;
+		HAL_UART_Transmit(&huart2, "Resetado", 9, 1000);
+	}
+
+	if(GPIO_Pin == S1_Pin) {
+		data[2]++;
+	}
+
+	if(GPIO_Pin == S2_Pin) {
+		data[3]++;
+	}
+
+	if(GPIO_Pin == S3_Pin) {
+		data[4]++;
+	}
+
+	flag = 1;
+}
 
 /* USER CODE END 4 */
 
