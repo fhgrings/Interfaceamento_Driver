@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project>
-	<configuration id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.994146602" name="Debug">
+	<configuration id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.484751675" name="Debug">
 		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 			<provider id="com.st.stm32cube.ide.mcu.toolchain.armnone.setup.CrossBuiltinSpecsDetector">
 				<language id="org.eclipse.cdt.core.gcc">
@@ -2605,7 +2605,7 @@
 			</provider>
 		</extension>
 	</configuration>
-	<configuration id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1946630872" name="Release">
+	<configuration id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1788048316" name="Release">
 		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 			<provider id="com.st.stm32cube.ide.mcu.toolchain.armnone.setup.CrossBuiltinSpecsDetector">
 				<language id="org.eclipse.cdt.core.gcc">
