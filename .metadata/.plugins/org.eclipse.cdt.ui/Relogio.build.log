@@ -1,0 +1,9 @@
+20:50:54 **** Incremental Build of configuration Default for project Relogio ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[D:/STM32CubeIDE_1.0.1/STM32CubeIDE/jre/bin/server;D:/STM32CubeIDE_1.0.1/STM32CubeIDE/jre/bin;D:/STM32CubeIDE_1.0.1/STM32CubeIDE/jre/lib/amd64;D:\app\felip\virtual\product\12.2.0\dbhome_1\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Programming\Git\cmd;D:\Program Files (x86)\apache-maven-3.6.0\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files (x86)\Brackets\command;C:\Program Files\nodejs\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\felip\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\felip\AppData\Local\Programs\Python\Python37-32\;C:\Users\felip\AppData\Local\Microsoft\WindowsApps;C:\Users\felip\AppData\Roaming\npm;D:\Programming\heroku\bin;C:\Users\felip\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Users\felip\AppData\Local\Programs\Python\Python37-32\Lib\site-packages\pip;;D:\STM32CubeIDE_1.0.1\STM32CubeIDE;]
+
+20:50:54 Build Failed. 1 errors, 0 warnings. (took 180ms)
+

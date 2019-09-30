@@ -1,0 +1,10 @@
+21:38:02 **** Incremental Build of configuration Debug for project Timer ****
+make -j8 all 
+arm-none-eabi-size   Timer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14732	    180	   1772	  16684	   412c	Timer.elf
+Finished building: default.size.stdout
+ 
+
+21:38:05 Build Finished. 0 errors, 0 warnings. (took 3s.253ms)
+

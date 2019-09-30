@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="datas"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="data"/>
+			<item value="HAL_ADC_Start_IT"/>
+			<item value="vector"/>
+			<item value="x"/>
+			<item value="DAC1"/>
+			<item value="hdac1"/>
+			<item value="HAL_DAC"/>
+			<item value="HAL_DAC_SetValue"/>
+			<item value="baud"/>
+			<item value="S4"/>
+			<item value="secondCounter"/>
+			<item value="counter"/>
+			<item value="print"/>
+			<item value="sub"/>
+			<item value="addTimerCounter"/>
+		</list>
+		<list key="replacehistory">
+			<item value="datas"/>
+			<item value="X"/>
+			<item value="clockPositionInvertComma"/>
+			<item value="clockCase"/>
+			<item value="menuOption"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1297"/>
+		<item key="DIALOG_Y_ORIGIN" value="175"/>
+		<item key="DIALOG_WIDTH" value="385"/>
+		<item key="DIALOG_HEIGHT" value="523"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

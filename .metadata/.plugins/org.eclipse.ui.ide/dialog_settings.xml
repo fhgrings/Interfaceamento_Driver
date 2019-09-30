@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\Faculdade\10_Semestre\Interfaceamento de Drivers"/>
+		<item value="C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\DSP_Exemple_2\DSP_Exemple_2"/>
+		<item value="C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\DSP_Exemple_2"/>
+		<item value="C:\Users\felip\Desktop\DSP\DSP_Exemple_2\DSP_Exemple_2"/>
+		<item value="C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\Relogio"/>
+	</list>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="534"/>
+		<item key="DIALOG_Y_ORIGIN" value="47"/>
+		<item key="DIALOG_WIDTH" value="875"/>
+		<item key="DIALOG_HEIGHT" value="711"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

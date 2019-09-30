@@ -37,8 +37,8 @@ SPI.list \
 all: SPI.elf secondary-outputs
 
 # Tool invocations
-SPI.elf: $(OBJS) $(USER_OBJS) C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\SPI\STM32F334R8TX_FLASH.ld
-	arm-none-eabi-gcc -o "SPI.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\ftesch\Desktop\Interfaceamento_Driver\Relogio\SPI\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+SPI.elf: $(OBJS) $(USER_OBJS) C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\Relogio\SPI\STM32F334R8TX_FLASH.ld
+	arm-none-eabi-gcc -o "SPI.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\Relogio\SPI\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

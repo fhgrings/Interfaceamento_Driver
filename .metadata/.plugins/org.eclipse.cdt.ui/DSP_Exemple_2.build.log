@@ -1,0 +1,21 @@
+22:10:15 **** Incremental Build of configuration Debug for project DSP_Exemple_2 ****
+make all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F334x8 -c -I../Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:147:4: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+    itoa(g_DACValue, (uint8_t*)buffer, 10);
+    ^~~~
+arm-none-eabi-gcc -o "DSP_Exemple_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"../STM32F334R8_FLASH.ld" --specs=nosys.specs -Wl,-Map="DSP_Exemple_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DSP_Exemple_2.elf
+ 
+arm-none-eabi-objdump -h -S  DSP_Exemple_2.elf  > "DSP_Exemple_2.list"
+Finished building: DSP_Exemple_2.list
+ 
+arm-none-eabi-size   DSP_Exemple_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10592	     16	   1956	  12564	   3114	DSP_Exemple_2.elf
+Finished building: default.size.stdout
+ 
+
+22:10:21 Build Finished. 0 errors, 1 warnings. (took 5s.653ms)
+
