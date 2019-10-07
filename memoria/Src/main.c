@@ -62,8 +62,8 @@ static void MX_I2C1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t endereco[2] = {0,1};
-uint8_t datas[5] = {1,0,2,4,6};// Dado para cada posicao de memoria
+uint8_t endereco[2] = {0,0};
+uint8_t datas[5] = {0,0,2,4,6};// Dado para cada posicao de memoria
 uint8_t memoria[3] = {0,0,0};
 uint8_t teste =0;
 int flag = 0;
@@ -116,7 +116,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  HAL_I2C_Master_Transmit(&hi2c1, EEPROM_ADDRESS , datas, 5, 100000);
+	  HAL_I2C_Master_Transmit(&hi2c1, EEPROM_ADDRESS , datas, 5, 1000);
 
 	  HAL_Delay(500);
 
@@ -127,7 +127,7 @@ int main(void)
 
 	  sprintf(result,"datas 1: %d\r\ndatas 2: %d\r\ndatas 3: %d\r\n", datas[2],datas[3],datas[4]);
 	  HAL_UART_Transmit(&huart2, result, strlen(result), 1000);
-	  HAL_Delay(1000);
+	  HAL_Delay(5000);
 
 //	  sprintf(result2,"Memoria 1: %d\r\nMemoria 2: %d\r\nMemoria 3: %d\r\n", memoria[0],memoria[1],memoria[2]);
   	  sprintf(result2,"Memoria 1: %d\r\n", teste);
@@ -136,10 +136,10 @@ int main(void)
 	  HAL_Delay(1000);
 
 
-	  if(flag == 1) {
-		HAL_I2C_Master_Transmit(&hi2c1, EEPROM_ADDRESS , datas, 5, 1000);
-		flag = 0;
-	  }
+//	  if(flag == 1) {
+//		HAL_I2C_Master_Transmit(&hi2c1, EEPROM_ADDRESS , datas, 5, 1000);
+//		flag = 0;
+//	  }
   }
   /* USER CODE END 3 */
 }

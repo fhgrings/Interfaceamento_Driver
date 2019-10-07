@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/ftesch/Desktop/Interfaceamento_Driver/Relogio/memoria/Inc
+HeaderPath=D:/Faculdade/10_Semestre/Interfaceamento de Drivers/memoria/Inc
 HeaderFiles=stm32f3xx_it.h;stm32f3xx_hal_conf.h;main.h;
-SourcePath=C:/Users/ftesch/Desktop/Interfaceamento_Driver/Relogio/memoria/Src
+SourcePath=D:/Faculdade/10_Semestre/Interfaceamento de Drivers/memoria/Src
 SourceFiles=stm32f3xx_it.c;stm32f3xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]
