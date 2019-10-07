@@ -45,17 +45,19 @@
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-char bitDado0
-char bitDado1
-char bitDado2
-char bitDado3
-char bitDado4
-char bitDado5
-char bitDado6
-char bitDado7
+char bitDado0;
+char bitDado1;
+char bitDado2;
+char bitDado3;
+char bitDado4;
+char bitDado5;
+char bitDado6;
+char bitDado7;
 
-char ValorLido
-char ValorEscrito
+int flag_EOC=0;
+
+char ValorLido;
+char ValorEscrito;
 
 /* USER CODE END PV */
 
@@ -79,6 +81,8 @@ static void MX_USART2_UART_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+  HAL_UART_Transmit(&huart2, "Iniciado", 8, 1000);
+
 
   /* USER CODE END 1 */
   
@@ -103,7 +107,41 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+	char outputEnable = HAL_GPIO_ReadPin(OUTPUT_ENABLE_GPIO_Port, OUTPUT_ENABLE_Pin);;
 
+	char bitDado0 = HAL_GPIO_ReadPin(D0_GPIO_Port, D0_Pin);;  // Read state
+	char bitDado1 = HAL_GPIO_ReadPin(D1_GPIO_Port, D1_Pin);;  // Read state
+	char bitDado2 = HAL_GPIO_ReadPin(D2_GPIO_Port, D2_Pin);;  // Read state
+	char bitDado3 = HAL_GPIO_ReadPin(D3_GPIO_Port, D3_Pin);;  // Read state
+	char bitDado4 = HAL_GPIO_ReadPin(D4_GPIO_Port, D4_Pin);;  // Read state
+	char bitDado5 = HAL_GPIO_ReadPin(D5_GPIO_Port, D5_Pin);;  // Read state
+	char bitDado6 = HAL_GPIO_ReadPin(D6_GPIO_Port, D6_Pin);;  // Read state
+	char bitDado7 = HAL_GPIO_ReadPin(D7_GPIO_Port, D7_Pin);;  // Read state
+
+
+  char ValorEscrito = 0;
+
+  	HAL_GPIO_WritePin(C_GPIO_Port, C_Pin, (ValorEscrito & 0x01));
+  	HAL_GPIO_WritePin(B_GPIO_Port, B_Pin, (ValorEscrito & 0x01) >> 1);
+  	HAL_GPIO_WritePin(A_GPIO_Port, A_Pin, (ValorEscrito & 0x01) >> 2);
+
+  	HAL_GPIO_WritePin(ALE_GPIO_Port, ALE_Pin, SET);
+  	HAL_Delay(100);
+  	HAL_GPIO_WritePin(Start_GPIO_Port, Start_Pin, SET);
+  	HAL_Delay(100);
+
+  	HAL_GPIO_WritePin(ALE_GPIO_Port, ALE_Pin, RESET);
+	HAL_Delay(100);
+	HAL_GPIO_WritePin(Start_GPIO_Port, Start_Pin, RESET);
+	HAL_Delay(100);
+
+
+
+
+  	HAL_Delay(2000);
+
+
+  	char buffer[40];
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -114,29 +152,28 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
+	  if(flag_EOC == 1) {
+		outputEnable = HAL_GPIO_ReadPin(OUTPUT_ENABLE_GPIO_Port, OUTPUT_ENABLE_Pin);;
 
-	char ValorEscrito = 4;
-
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, (ValorEscrito & 0x01));
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, ((ValorEscrito & 0x02)>>1));
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, ((ValorEscrito & 0x04)>>2));
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, ((ValorEscrito & 0x08)>>3));
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, ((ValorEscrito & 0x10)>>4));
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, ((ValorEscrito & 0x20)>>5));
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_11, ((ValorEscrito & 0x40)>>6));
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, ((ValorEscrito & 0x80)>>7));
-
-	char bitDado0 = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_5);;  // Read state
-	char bitDado1 = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_4);;  // Read state
-	char bitDado2 = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_3);;  // Read state
-	char bitDado3 = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_2);;  // Read state
-	char bitDado4 = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1);;  // Read state
-	char bitDado5 = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0);;  // Read state
-	char bitDado6 = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8);;  // Read state
-	char bitDado7 = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9);;  // Read state
+		bitDado0 = HAL_GPIO_ReadPin(D0_GPIO_Port, D0_Pin);;  // Read state
+		bitDado1 = HAL_GPIO_ReadPin(D1_GPIO_Port, D1_Pin);;  // Read state
+		bitDado2 = HAL_GPIO_ReadPin(D2_GPIO_Port, D2_Pin);;  // Read state
+		bitDado3 = HAL_GPIO_ReadPin(D3_GPIO_Port, D3_Pin);;  // Read state
+		bitDado4 = HAL_GPIO_ReadPin(D4_GPIO_Port, D4_Pin);;  // Read state
+		bitDado5 = HAL_GPIO_ReadPin(D5_GPIO_Port, D5_Pin);;  // Read state
+		bitDado6 = HAL_GPIO_ReadPin(D6_GPIO_Port, D6_Pin);;  // Read state
+		bitDado7 = HAL_GPIO_ReadPin(D7_GPIO_Port, D7_Pin);;  // Read state
 
 
-	char ValorLido = bitDado0|(bitDado1<<1)|(bitDado2<<2)|(bitDado3<<3)|(bitDado4<<4)|(bitDado5<<5)|(bitDado6<<6)|(bitDado7<<7);
+		ValorLido = bitDado0|(bitDado1<<1)|(bitDado2<<2)|(bitDado3<<3)|(bitDado4<<4)|(bitDado5<<5)|(bitDado6<<6)|(bitDado7<<7);
+		flag_EOC = 0;
+	  }
+
+  	  sprintf(buffer,"ValorLido: %d\r\n", ValorLido);
+
+	  HAL_UART_Transmit(&huart2, buffer, strlen(buffer), 1000);
+	  HAL_Delay(1000);
+
 
 
 	}
@@ -154,9 +191,10 @@ void SystemClock_Config(void)
 
   /** Initializes the CPU, AHB and APB busses clocks 
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL16;
@@ -177,6 +215,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+  HAL_RCC_MCOConfig(RCC_MCO, RCC_MCO1SOURCE_LSI, RCC_MCODIV_1);
 }
 
 /**
@@ -233,8 +272,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, ALE_Pin|WR_Pin|RD_Pin|C_Pin 
-                          |B_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, ALE_Pin|Start_Pin|C_Pin|B_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(A_GPIO_Port, A_Pin, GPIO_PIN_RESET);
@@ -252,20 +290,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : ALE_Pin WR_Pin RD_Pin C_Pin 
-                           B_Pin */
-  GPIO_InitStruct.Pin = ALE_Pin|WR_Pin|RD_Pin|C_Pin 
-                          |B_Pin;
+  /*Configure GPIO pins : ALE_Pin Start_Pin C_Pin B_Pin */
+  GPIO_InitStruct.Pin = ALE_Pin|Start_Pin|C_Pin|B_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : INTR_Pin */
-  GPIO_InitStruct.Pin = INTR_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(INTR_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : A_Pin */
   GPIO_InitStruct.Pin = A_Pin;
@@ -274,24 +304,47 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(A_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : D7_Pin D6_Pin D5_Pin */
-  GPIO_InitStruct.Pin = D7_Pin|D6_Pin|D5_Pin;
+  /*Configure GPIO pins : D7_Pin D6_Pin D5_Pin D4_Pin 
+                           OUTPUT_ENABLE_Pin */
+  GPIO_InitStruct.Pin = D7_Pin|D6_Pin|D5_Pin|D4_Pin 
+                          |OUTPUT_ENABLE_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : D4_Pin D3_Pin D2_Pin D1_Pin 
-                           D0_Pin */
-  GPIO_InitStruct.Pin = D4_Pin|D3_Pin|D2_Pin|D1_Pin 
-                          |D0_Pin;
+  /*Configure GPIO pin : PA8 */
+  GPIO_InitStruct.Pin = GPIO_PIN_8;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Alternate = GPIO_AF0_MCO;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : D3_Pin D2_Pin D1_Pin D0_Pin */
+  GPIO_InitStruct.Pin = D3_Pin|D2_Pin|D1_Pin|D0_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : EOC_Pin */
+  GPIO_InitStruct.Pin = EOC_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(EOC_GPIO_Port, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+
 }
 
 /* USER CODE BEGIN 4 */
-
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	if(GPIO_Pin == EOC_Pin) {
+		flag_EOC = 1;
+	}
+}
 /* USER CODE END 4 */
 
 /**
