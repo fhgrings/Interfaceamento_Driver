@@ -1,0 +1,10 @@
+13:34:47 **** Incremental Build of configuration Debug for project MultiProgramacao ****
+make -j8 all 
+arm-none-eabi-size   MultiProgramacao.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22344	    124	   7356	  29824	   7480	MultiProgramacao.elf
+Finished building: default.size.stdout
+ 
+
+13:34:50 Build Finished. 0 errors, 0 warnings. (took 2s.673ms)
+

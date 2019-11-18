@@ -97,6 +97,7 @@ int main(void)
   MX_USART2_UART_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
+  uint8_t init = 0xE;
 
   /* USER CODE END 2 */
 
@@ -106,19 +107,42 @@ int main(void)
   {
     /* USER CODE END WHILE */
 
-	  HAL_GPIO_WritePin(LD_GPIO_Port, GPIO_PIN_4, GPIO_PIN_RESET);
-	  HAL_Delay(100);
-	  HAL_GPIO_WritePin(LD_GPIO_Port, GPIO_PIN_4, GPIO_PIN_SET);
+    /* USER CODE BEGIN 3 */
+//	  HAL_GPIO_WritePin(ADC_Acel_GPIO_Port, ADC_Acel_Pin, GPIO_PIN_RESET);
+//	  HAL_Delay(100);
+//	  HAL_GPIO_WritePin(ADC_Acel_GPIO_Port, ADC_Acel_Pin, GPIO_PIN_SET);
+//	  HAL_Delay(100);
+
+	  HAL_GPIO_WritePin(EN_OXIG_GPIO_Port, EN_OXIG_Pin, 0);
 	  HAL_Delay(100);
 
 	  HAL_SPI_Receive(&hspi1, &dadospi, 1, 1000);
 
-	  sprintf (transmissao, "valor lido: %d\r\n", dadospi);
+	  HAL_GPIO_WritePin(EN_OXIG_GPIO_Port, EN_OXIG_Pin, 1);
+	  HAL_Delay(100);
+
+
+
+//	  HAL_GPIO_WritePin(EN_OXIG_GPIO_Port, EN_OXIG_Pin, 0);
+//
+//	  init = 0xE;
+//	  HAL_SPI_Transmit(&hspi1, &init, 1, 1000);
+//
+//	  HAL_SPI_Receive(&hspi1, &init, 1, 1000);
+//
+//	  HAL_GPIO_WritePin(EN_OXIG_GPIO_Port, EN_OXIG_Pin, 1);
+
+
+
+
+
+
+	  sprintf (transmissao, "valor lido: %d\r\n", init);
+
 
 	  HAL_UART_Transmit(&huart2, transmissao, strlen(transmissao), 10000);
 
 	  HAL_Delay(1000);
-    /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
@@ -177,8 +201,8 @@ static void MX_SPI1_Init(void)
   /* SPI1 parameter configuration*/
   hspi1.Instance = SPI1;
   hspi1.Init.Mode = SPI_MODE_MASTER;
-  hspi1.Init.Direction = SPI_DIRECTION_2LINES_RXONLY;
-  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
+  hspi1.Init.Direction = SPI_DIRECTION_2LINES;
+  hspi1.Init.DataSize = SPI_DATASIZE_4BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi1.Init.NSS = SPI_NSS_SOFT;
@@ -250,7 +274,10 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, LD_Pin|ADC_Acel_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(EN_OXIG_GPIO_Port, EN_OXIG_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -258,12 +285,19 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PA4 */
-  GPIO_InitStruct.Pin = GPIO_PIN_4;
+  /*Configure GPIO pins : LD_Pin ADC_Acel_Pin */
+  GPIO_InitStruct.Pin = LD_Pin|ADC_Acel_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : EN_OXIG_Pin */
+  GPIO_InitStruct.Pin = EN_OXIG_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(EN_OXIG_GPIO_Port, &GPIO_InitStruct);
 
 }
 

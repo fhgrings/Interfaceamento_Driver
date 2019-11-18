@@ -1,0 +1,128 @@
+14:54:45 **** Incremental Build of configuration Debug for project InjecaoEletronica_Projeto_GB ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:194:30: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   HAL_UART_Transmit(&huart2, "Olar", 4, 1000);
+                              ^~~~~~
+In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+../Src/main.c: In function 'StartLeituraAcel':
+../Src/main.c:410:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    sprintf(transmissao, "valor Acelerador lido: %d\r\n", aceleradorLocal);
+            ^~~~~~~~~~~
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from ../Inc/stm32f3xx_hal_conf.h:196,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+d:\stm32cubeide_1.0.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.0.0.201904181610\tools\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int sprintf (char *__restrict, const char *__restrict, ...)
+     ^~~~~~~
+../Src/main.c:413:44: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+    HAL_UART_Transmit(&huart2, transmissao, strlen(transmissao), 1000);
+                                            ^~~~~~
+../Src/main.c:413:44: warning: incompatible implicit declaration of built-in function 'strlen'
+../Src/main.c:413:44: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:413:51: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, transmissao, strlen(transmissao), 1000);
+                                                   ^~~~~~~~~~~
+../Src/main.c:413:51: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c: In function 'StartLeituraSens':
+../Src/main.c:446:13: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    sprintf (transmissao, "valor Oxigenio lido: %d\r\n", sensorOxg_TempLocal[0]);
+             ^~~~~~~~~~~
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from ../Inc/stm32f3xx_hal_conf.h:196,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+d:\stm32cubeide_1.0.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.0.0.201904181610\tools\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int sprintf (char *__restrict, const char *__restrict, ...)
+     ^~~~~~~
+../Src/main.c:447:44: warning: incompatible implicit declaration of built-in function 'strlen'
+    HAL_UART_Transmit(&huart2, transmissao, strlen(transmissao), 1000);
+                                            ^~~~~~
+../Src/main.c:447:44: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:447:51: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, transmissao, strlen(transmissao), 1000);
+                                                   ^~~~~~~~~~~
+../Src/main.c:447:51: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:456:13: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    sprintf (transmissao, "valor Temperatura lido: %d\r\n", sensorOxg_TempLocal[1]);
+             ^~~~~~~~~~~
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from ../Inc/stm32f3xx_hal_conf.h:196,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+d:\stm32cubeide_1.0.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.0.0.201904181610\tools\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int sprintf (char *__restrict, const char *__restrict, ...)
+     ^~~~~~~
+../Src/main.c:457:51: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, transmissao, strlen(transmissao), 1000);
+                                                   ^~~~~~~~~~~
+../Src/main.c:457:51: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c: In function 'StartProcessamen':
+../Src/main.c:485:10: warning: variable 'constantesLocal' set but not used [-Wunused-but-set-variable]
+  uint8_t constantesLocal[3];
+          ^~~~~~~~~~~~~~~
+../Src/main.c: In function 'StartEscritaDisplay':
+../Src/main.c:603:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    sprintf(bufferAcelerador, "Acelerador: %d", informacoesLocal[0]);
+            ^~~~~~~~~~~~~~~~
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from ../Inc/stm32f3xx_hal_conf.h:196,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+d:\stm32cubeide_1.0.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.0.0.201904181610\tools\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int sprintf (char *__restrict, const char *__restrict, ...)
+     ^~~~~~~
+../Src/main.c:604:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+    sprintf(bufferOxigenio, "Oxigenio: %d", informacoesLocal[1]);
+            ^~~~~~~~~~~~~~
+In file included from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:50:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:45,
+                 from ../Inc/stm32f3xx_hal_conf.h:196,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
+                 from ../Inc/main.h:31,
+                 from ../Src/main.c:22:
+d:\stm32cubeide_1.0.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.0.0.201904181610\tools\arm-none-eabi\include\stdio.h:244:5: note: expected 'char * restrict' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int sprintf (char *__restrict, const char *__restrict, ...)
+     ^~~~~~~
+../Src/main.c:607:49: warning: incompatible implicit declaration of built-in function 'strlen'
+    HAL_UART_Transmit(&huart2, bufferAcelerador, strlen(bufferAcelerador), 1000);
+                                                 ^~~~~~
+../Src/main.c:607:49: note: include '<string.h>' or provide a declaration of 'strlen'
+../Src/main.c:607:56: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, bufferAcelerador, strlen(bufferAcelerador), 1000);
+                                                        ^~~~~~~~~~~~~~~~
+../Src/main.c:607:56: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+../Src/main.c:608:54: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart2, bufferOxigenio, strlen(bufferOxigenio), 1000);
+                                                      ^~~~~~~~~~~~~~
+../Src/main.c:608:54: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+arm-none-eabi-gcc -o "InjecaoEletronica_Projeto_GB.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="InjecaoEletronica_Projeto_GB.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: InjecaoEletronica_Projeto_GB.elf
+ 
+arm-none-eabi-objdump -h -S  InjecaoEletronica_Projeto_GB.elf  > "InjecaoEletronica_Projeto_GB.list"
+arm-none-eabi-size   InjecaoEletronica_Projeto_GB.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25964	    124	  10260	  36348	   8dfc	InjecaoEletronica_Projeto_GB.elf
+Finished building: default.size.stdout
+ 
+Finished building: InjecaoEletronica_Projeto_GB.list
+ 
+
+14:54:49 Build Finished. 0 errors, 16 warnings. (took 4s.393ms)
+

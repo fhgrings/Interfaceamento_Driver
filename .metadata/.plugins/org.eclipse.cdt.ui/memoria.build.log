@@ -1,54 +1,10 @@
-20:17:09 **** Incremental Build of configuration Debug for project memoria ****
+21:47:16 **** Incremental Build of configuration Debug for project memoria ****
 make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F334x8 -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-../Src/main.c: In function 'main':
-../Src/main.c:129:39: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
-    HAL_UART_Transmit(&huart2, result, strlen(result), 1000);
-                                       ^~~~~~
-../Src/main.c:129:39: warning: incompatible implicit declaration of built-in function 'strlen'
-../Src/main.c:129:39: note: include '<string.h>' or provide a declaration of 'strlen'
-../Src/main.c:129:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
-    HAL_UART_Transmit(&huart2, result, strlen(result), 1000);
-                               ^~~~~~
-In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
-                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
-                 from ../Inc/main.h:31,
-                 from ../Src/main.c:22:
-../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
- HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
-                   ^~~~~~~~~~~~~~~~~
-../Src/main.c:134:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
-    HAL_UART_Transmit(&huart2, result2, strlen(result2), 1000);
-                               ^~~~~~~
-In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
-                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
-                 from ../Inc/main.h:31,
-                 from ../Src/main.c:22:
-../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
- HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
-                   ^~~~~~~~~~~~~~~~~
-../Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
-../Src/main.c:331:30: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
-   HAL_UART_Transmit(&huart2, "Resetado\r\n", 9, 1000);
-                              ^~~~~~~~~~~~~~
-In file included from ../Inc/stm32f3xx_hal_conf.h:320:0,
-                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:46,
-                 from ../Inc/main.h:31,
-                 from ../Src/main.c:22:
-../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1351:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
- HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
-                   ^~~~~~~~~~~~~~~~~
-arm-none-eabi-gcc -o "memoria.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Faculdade\10_Semestre\Interfaceamento de Drivers\memoria\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="memoria.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: memoria.elf
- 
-arm-none-eabi-objdump -h -S  memoria.elf  > "memoria.list"
 arm-none-eabi-size   memoria.elf 
    text	   data	    bss	    dec	    hex	filename
-  16272	    132	   1860	  18264	   4758	memoria.elf
+  16172	    128	   1864	  18164	   46f4	memoria.elf
 Finished building: default.size.stdout
  
-Finished building: memoria.list
- 
 
-20:17:13 Build Finished. 0 errors, 5 warnings. (took 3s.321ms)
+21:47:18 Build Finished. 0 errors, 0 warnings. (took 1s.337ms)
 

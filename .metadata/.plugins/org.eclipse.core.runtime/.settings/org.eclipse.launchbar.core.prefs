@@ -1,8 +1,12 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:SPI.elf,org.eclipse.launchbar.core.descriptorType.default\:Timer_test.elf,org.eclipse.launchbar.core.descriptorType.default\:memoria.elf
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Paralela.elf,org.eclipse.launchbar.core.descriptorType.default\:i2c.elf,org.eclipse.launchbar.core.descriptorType.default\:memoria.elf,org.eclipse.launchbar.core.descriptorType.default\:rtos_first_project.elf,org.eclipse.launchbar.core.descriptorType.default\:Timer_test.elf,org.eclipse.launchbar.core.descriptorType.default\:SPI.elf,org.eclipse.launchbar.core.descriptorType.default\:Display.elf,org.eclipse.launchbar.core.descriptorType.default\:MultiProgramacao.elf,org.eclipse.launchbar.core.descriptorType.default\:InjecaoEletronica_Projeto_GB.elf
 eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Display.elf/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Display.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Paralela.elf/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:Paralela.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:SPI.elf/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:SPI.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:Timer.elf/activeLaunchMode=run

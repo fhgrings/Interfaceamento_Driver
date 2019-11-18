@@ -1,4 +1,4 @@
-21:44:08 **** Incremental Build of configuration Debug for project Timer_test ****
+13:01:36 **** Incremental Build of configuration Debug for project Timer_test ****
 make -j8 all 
 arm-none-eabi-size   Timer_test.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   Timer_test.elf
 Finished building: default.size.stdout
  
 
-21:44:10 Build Finished. 0 errors, 0 warnings. (took 2s.242ms)
+13:01:38 Build Finished. 0 errors, 0 warnings. (took 1s.427ms)
 
