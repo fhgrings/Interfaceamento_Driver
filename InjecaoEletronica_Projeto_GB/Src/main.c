@@ -388,53 +388,42 @@ void StartLeituraAcel(void const * argument)
   /* USER CODE BEGIN 5 */
 	uint8_t aceleradorLocal = 0;
 	uint8_t sensorOxg_TempLocal[2];
-	TickType_t xTimeBefore, xTotalTimeSuspended;
-
-
-	/* Armazena o valor da contagem de tempo inicial */
-	xTimeBefore = xTaskGetTickCount();
+	float teste = 0;
   /* Infinite loop */
   for(;;)
   {
-		/* A cada repeti��o calcula a diferen�a de tempo para o tempo inicial*/
-		xTotalTimeSuspended = xTaskGetTickCount() - xTimeBefore;
+	  aceleradorLocal = 0;
+	  HAL_GPIO_WritePin(EN_ACELERADOR_GPIO_Port, EN_ACELERADOR_Pin, 0);
+	  HAL_SPI_Receive(&hspi1, &aceleradorLocal, 1, 1000);
+	  HAL_GPIO_WritePin(EN_ACELERADOR_GPIO_Port, EN_ACELERADOR_Pin, 1);
+//	  aceleradorLocal = ((int)(- 128 + aceleradorLocal))*100/63;
 
-		/* se o tempo chegou ao limite desejado realiza alguma a��o e come�a a contagem novamente a partir do momento atual*/
-//		if (xTotalTimeSuspended >= 1000){
-
-			/* Armazena o valor da contagem de tempo atual */
-			xTimeBefore = xTaskGetTickCount();
-
-			aceleradorLocal = 0;
-			  HAL_GPIO_WritePin(EN_ACELERADOR_GPIO_Port, EN_ACELERADOR_Pin, 0);
-			  HAL_SPI_Receive(&hspi1, &aceleradorLocal, 1, 1000);
-			  HAL_GPIO_WritePin(EN_ACELERADOR_GPIO_Port, EN_ACELERADOR_Pin, 1);
-			  aceleradorLocal = ((int)(- 128 + aceleradorLocal))*100/63;
-
-			  // ===============================================
+	  // ===============================================
 
 
-			  sensorOxg_TempLocal[0] = 0;
-			  sensorOxg_TempLocal[1] = 0;
+	  sensorOxg_TempLocal[0] = 0;
+	  sensorOxg_TempLocal[1] = 0;
 
-			  HAL_GPIO_WritePin(EN_OXIGENIO_GPIO_Port, EN_OXIGENIO_Pin, 0);
-			  HAL_SPI_Receive(&hspi1, &sensorOxg_TempLocal[0], 1, 1000);
-			  HAL_GPIO_WritePin(EN_OXIGENIO_GPIO_Port, EN_OXIGENIO_Pin, 1);
-			  sensorOxg_TempLocal[0] = ((int)(- 128 + sensorOxg_TempLocal[0]))*100/63;
+	  HAL_GPIO_WritePin(EN_OXIGENIO_GPIO_Port, EN_OXIGENIO_Pin, 0);
+	  HAL_SPI_Receive(&hspi1, &sensorOxg_TempLocal[0], 1, 1000);
+	  HAL_GPIO_WritePin(EN_OXIGENIO_GPIO_Port, EN_OXIGENIO_Pin, 1);
+	  sensorOxg_TempLocal[0] = ((int)(- 128 + sensorOxg_TempLocal[0]))*(int)(100/63);
 
-			  HAL_GPIO_WritePin(EN_TEMPERATURA_GPIO_Port, EN_TEMPERATURA_Pin, 0);
-			  HAL_SPI_Receive(&hspi1, &sensorOxg_TempLocal[1], 1, 1000);
-			  HAL_GPIO_WritePin(EN_TEMPERATURA_GPIO_Port, EN_TEMPERATURA_Pin, 1);
-			  sensorOxg_TempLocal[1] = ((int)(- 128 + sensorOxg_TempLocal[1]))*100/63;
+	  teste = ((- 128 + sensorOxg_TempLocal[0])*(1.58));
 
-			  osMutexWait(MtxAceleradorHandle,1000);
-			  aceleradorGlobal = aceleradorLocal;
-			  sensorOxg_TempGlobal[0] = sensorOxg_TempLocal[0];
-			  sensorOxg_TempGlobal[1] = sensorOxg_TempLocal[1];
-			  osMutexRelease(MtxAceleradorHandle);
+	  HAL_GPIO_WritePin(EN_TEMPERATURA_GPIO_Port, EN_TEMPERATURA_Pin, 0);
+	  HAL_SPI_Receive(&hspi1, &sensorOxg_TempLocal[1], 1, 1000);
+	  HAL_GPIO_WritePin(EN_TEMPERATURA_GPIO_Port, EN_TEMPERATURA_Pin, 1);
+//	  sensorOxg_TempLocal[1] = ((int)(- 128 + sensorOxg_TempLocal[1]))*100/63;
 
-//		}
-	  osDelay(100);
+	  osMutexWait(MtxAceleradorHandle,1000);
+	  aceleradorGlobal = aceleradorLocal;
+	  sensorOxg_TempGlobal[0] = sensorOxg_TempLocal[0];
+	  sensorOxg_TempGlobal[1] = sensorOxg_TempLocal[1];
+	  osMutexRelease(MtxAceleradorHandle);
+
+	  osDelay(1000);
+
   }
   /* USER CODE END 5 */
 }
@@ -483,13 +472,14 @@ void StartProcessamen(void const * argument)
 	temperaturaLocal = sensorOxg_TempGlobal[1];
 	osMutexRelease(MtxAceleradorHandle);
 
-	osMutexWait(MtxConstHandle, 1000);
+//	osMutexWait(MtxConstantesHandle, 1000);
 	constantesLocal[0] = constantesGlobal[0];
 	constantesLocal[1] = constantesGlobal[1];
 	constantesLocal[2] = constantesGlobal[2];
-	osMutexRelease(MtxConstHandle);
+//	osMutexRelease(MtxConstantesHandle);
 
-	qntCombustivelLocal = (int)(aceleracaoLocal * 0.5) + (0.3 * (100 - temperaturaLocal)) + (oxigenioLocal * 0.2);
+//	qntCombustivelLocal = (int)(aceleracaoLocal * 0.5) + (0.3 * (100 - temperaturaLocal)) + (oxigenioLocal * 0.2);
+	qntCombustivelLocal = 1;
 
 	osMutexWait(MtxQntCombustivelHandle, 1000);
 	qntCombustivelGlobal = qntCombustivelLocal;
@@ -499,6 +489,7 @@ void StartProcessamen(void const * argument)
 	informacoesGlobal[0] = qntCombustivelGlobal;
 	informacoesGlobal[1] = 222;
 	osMutexRelease(MtxInformacoesHandle);
+
 	osDelay(10);
 
   }
