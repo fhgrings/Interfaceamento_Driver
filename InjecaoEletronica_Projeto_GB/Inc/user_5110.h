@@ -3,6 +3,8 @@
 
 #include "main.h"
 #include "stm32f3xx_hal.h" // trocar o include conforme a familia stm32f0xx_hal.h para o M0 e stm32f3xx_hal.h para o M4
+#include "cmsis_os.h"
+
 
 extern SPI_HandleTypeDef hspi1; // Usar o mesmo nome da struct utilizada na config do SPI utilizado
 

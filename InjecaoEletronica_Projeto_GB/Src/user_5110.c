@@ -115,7 +115,7 @@ void LCD_Init(void) {
  */
 void LCD_Reset(void) {
   HAL_GPIO_WritePin(LCD_RESET_PORT, LCD_RESET_PIN, GPIO_PIN_RESET);
-  HAL_Delay(50);
+  osDelay(50);
   HAL_GPIO_WritePin(LCD_RESET_PORT, LCD_RESET_PIN, GPIO_PIN_SET);
 }
 
