@@ -41,8 +41,8 @@ MultiProgramacao.list \
 all: MultiProgramacao.elf secondary-outputs
 
 # Tool invocations
-MultiProgramacao.elf: $(OBJS) $(USER_OBJS) C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\MultiProgramacao\STM32F334R8TX_FLASH.ld
-	arm-none-eabi-gcc -o "MultiProgramacao.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\MultiProgramacao\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiProgramacao.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+MultiProgramacao.elf: $(OBJS) $(USER_OBJS) C:\Users\joaosh\Desktop\MultiProgramacao\STM32F334R8TX_FLASH.ld
+	arm-none-eabi-gcc -o "MultiProgramacao.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\joaosh\Desktop\MultiProgramacao\STM32F334R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MultiProgramacao.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

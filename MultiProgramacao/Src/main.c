@@ -24,8 +24,11 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-uint8_t sensores[2][10];
-float resultados[2][3];
+uint8_t sensorA[10];
+uint8_t sensorB[10];
+uint8_t resultadoA[3];
+uint8_t resultadoB[3];
+int posicao;
 
 /* USER CODE END Includes */
 
@@ -293,15 +296,22 @@ void StartTaskLeitura(void const * argument) {
 	/* Infinite loop */
 	for (;;) {
 
-		osMutexWait(mtxSensoresHandle, 1000);
+		uint8_t senA[10];
+		uint8_t senB[10];
 
-		for (int i = 0; i < 2; i++) {
-			for (int j = 0; j < 10; j++) {
-				sensores[i][j] = sensores[i][j + 1];
-			}
+		senA[0] = 2;
+		senB[0] = 3;
+
+		osMutexWait(mtxSensoresHandle, 1000);
+		for(int i = 0; i < 10; i++){
+			senA[i] = senA[i+1];
+			senB[i] = senB[i+1];
+
+			posicao = i;
+
+			sensorA[posicao] = senA[i];
+			sensorB[posicao] = senB[i];
 		}
-		sensores[0][9] = 2;
-		sensores[1][9] = 2;
 		osMutexRelease(mtxSensoresHandle);
 	}
 
@@ -318,31 +328,34 @@ void StartTaskLeitura(void const * argument) {
 /* USER CODE END Header_StartTaskMin */
 void StartTaskMin(void const * argument) {
 	/* USER CODE BEGIN StartTaskMin */
-	int min[2];
-	int i = 0;
+	uint8_t minA;
+	uint8_t minB;
+	uint8_t senALocal[10];
+	uint8_t senBLocal[10];
+
 	/* Infinite loop */
 	for (;;) {
 
 		osMutexWait(mtxSensoresHandle, 1000);
-		i = 0;
-		for (int j = 0; j < 10; i++) {
-			if (sensores[i][j] < min) {
-				min[0] = sensores[i][j];
+			for (int i = 0; i < 10; i++){
+				senALocal[i] = sensorA[posicao];
+				senBLocal[i] = sensorB[posicao];
+				posicao++;
 			}
-		}
-
-		i = 1;
-		for (int j = 0; j < 10; i++) {
-			if (sensores[i][j] < min) {
-				min[1] = sensores[i][j];
-			}
-		}
-
 		osMutexRelease(mtxSensoresHandle);
 
+		for (int i = 0; i < 10; i++) {
+			if (senALocal[i] < minA) {
+				minA = senALocal[i];
+			}
+			if (senBLocal[i] < minB) {
+				minB = senBLocal[i];
+			}
+		}
+
 		osMutexWait(mtxResultadoHandle, 1000);
-		resultados[0][0] = min[0];
-		resultados[1][0] = min[1];
+		resultadoA[0] = minA;
+		resultadoB[0] = minB;
 		osMutexRelease(mtxResultadoHandle);
 
 	}
@@ -358,33 +371,33 @@ void StartTaskMin(void const * argument) {
 /* USER CODE END Header_StartTask03 */
 void StartTask03(void const * argument) {
 	/* USER CODE BEGIN StartTask03 */
-	int max[2];
-	int i;
+	uint8_t maxA;
+	uint8_t maxB;
+	uint8_t senALocal[10];
+	uint8_t senBLocal[10];
+
 	/* Infinite loop */
 	for (;;) {
 		osMutexWait(mtxSensoresHandle, 1000);
-		i = 0;
-		max[0] = sensores[0][0];
-		for (int j = 0; j < 10; i++) {
-			if (sensores[i][j] < max[1]) {
-				max[0] = sensores[i][j];
+			for (int i = 0; i < 10; i++){
+				senALocal[i] = sensorA[posicao];
+				senBLocal[i] = sensorB[posicao];
+				posicao++;
 			}
-		}
-
-		i = 1;
-		max[1] = sensores[1][0];
-
-		for (int j = 0; j < 10; i++) {
-			if (sensores[i][j] < max[1]) {
-				max[1] = sensores[i][j];
-			}
-		}
-
 		osMutexRelease(mtxSensoresHandle);
 
+		for (int i = 0; i < 10; i++) {
+			if (senALocal[i] < maxA) {
+				maxA = senALocal[i];
+			}
+			if (senBLocal[i] < maxB) {
+				maxB = senBLocal[i];
+			}
+		}
+
 		osMutexWait(mtxResultadoHandle, 1000);
-		resultados[0][1] = max[0];
-		resultados[1][1] = max[1];
+		resultadoA[1] = maxA;
+		resultadoB[1] = maxB;
 		osMutexRelease(mtxResultadoHandle);
 	}
 	/* USER CODE END StartTask03 */
@@ -399,27 +412,31 @@ void StartTask03(void const * argument) {
 /* USER CODE END Header_StartTaskMed */
 void StartTaskMed(void const * argument) {
 	/* USER CODE BEGIN StartTaskMed */
-	float med[2];
-	int i;
+	uint8_t medA;
+	uint8_t medB;
+	uint8_t senALocal[10];
+	uint8_t senBLocal[10];
+
 	/* Infinite loop */
 	for (;;) {
 		osMutexWait(mtxSensoresHandle, 1000);
-		i = 0;
-		for (int j = 0; j < 10; i++) {
-			med[i] = +sensores[i][j];
+		for (int i = 0; i < 10; i++){
+			senALocal[i] = sensorA[posicao];
+			senBLocal[i] = sensorB[posicao];
+			posicao++;
 		}
-		med[i] = med[i] / 10;
-
-		i = 1;
-		for (int j = 0; j < 10; i++) {
-			med[i] = +sensores[i][j];
-		}
-		med[i] = med[i] / 10;
-
 		osMutexRelease(mtxSensoresHandle);
+
+		for (int i = 0; i < 10; i++) {
+			medA = +senALocal[i];
+			medB = +senBLocal[i];
+		}
+		medA = medA / 10;
+		medB = medB / 10;
+
 		osMutexWait(mtxResultadoHandle, 1000);
-		resultados[0][1] = med[0];
-		resultados[1][1] = med[1];
+		resultadoA[2] = medA;
+		resultadoB[2] = medB;
 		osMutexRelease(mtxResultadoHandle);
 	}
 	/* USER CODE END StartTaskMed */
@@ -434,23 +451,32 @@ void StartTaskMed(void const * argument) {
 /* USER CODE END Header_StartTaskEscrita */
 void StartTaskEscrita(void const * argument) {
 	/* USER CODE BEGIN StartTaskEscrita */
-	uint8_t buffer[1000];
+	char bufferA[1000];
+	char bufferB[1000];
+	int LocalA[3];
+	int LocalB[3];
 	/* Infinite loop */
 	for (;;) {
 
 		osMutexWait(mtxResultadoHandle, 1000);
+		LocalA[0] = resultadoA[0];
+		LocalA[1] = resultadoA[1];
+		LocalA[2] = resultadoA[2];
 
-		sprintf(buffer, "Min: %d\r\n Max: %d\r\n Med: %d\r\n", sensores[0][0],
-				sensores[0][1], sensores[0][2]);
-
-		HAL_UART_Transmit(&huart2, buffer, strlen(buffer), 1000);
-
-		sprintf(buffer, "Min: %d\r\n Max: %d\r\n Med: %d\r\n", sensores[1][0],
-				sensores[1][1], sensores[1][2]);
-
-		HAL_UART_Transmit(&huart2, buffer, strlen(buffer), 1000);
-
+		LocalB[0] = resultadoB[0];
+		LocalB[1] = resultadoB[1];
+		LocalB[2] = resultadoB[2];
 		osMutexRelease(mtxResultadoHandle);
+
+		sprintf(bufferA, "Sensor A:\r\n Min: %d\r\n Max: %d\r\n Med: %d\r\n", LocalA[0], LocalA[1], LocalA[2]);
+
+		HAL_UART_Transmit(&huart2, (uint8_t*)bufferA, 1000, 1000);
+
+		sprintf(bufferB, "Sensor B:\r\n Min: %d\r\n Max: %d\r\n Med: %d\r\n", LocalB[0], LocalB[1], LocalB[2]);
+
+		HAL_UART_Transmit(&huart2, (uint8_t*)bufferB, 1000, 1000);
+
+
 	}
 	/* USER CODE END StartTaskEscrita */
 }
