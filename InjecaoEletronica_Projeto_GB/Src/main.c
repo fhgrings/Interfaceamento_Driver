@@ -80,11 +80,11 @@ void StartEscritaDisplay(void const * argument);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t aceleradorGlobal;
-uint8_t sensorOxg_TempGlobal[2];
-uint8_t qntCombustivelGlobal;
-uint8_t informacoesGlobal[2];
-uint8_t constantesGlobal[3];
+int aceleradorGlobal;
+int sensorOxg_TempGlobal[2];
+int qntCombustivelGlobal;
+int informacoesGlobal[2];
+int constantesGlobal[3];
 
 
 
@@ -387,24 +387,36 @@ static void MX_GPIO_Init(void)
 void StartLeituraAcel(void const * argument)
 {
   /* USER CODE BEGIN 5 */
-	uint8_t aceleradorLocal = 0;
+	uint8_t aceleradorSPI = 0;
+	int aceleradorLocal = 0;
+	uint8_t sensorOxg_TempSPI[2];
+	int sensorOxg_TempLocal[2];
+
+
 	uint8_t transmissao[100];
-	uint8_t sensorOxg_TempLocal[2];
+
   /* Infinite loop */
   for(;;)
   {
 	  aceleradorLocal = 0;
 	  HAL_GPIO_WritePin(EN_ACELERADOR_GPIO_Port, EN_ACELERADOR_Pin, 0);
 
-	  HAL_SPI_Receive(&hspi1, &aceleradorLocal, 1, 1000);
+	  HAL_SPI_Receive(&hspi1, &aceleradorSPI, 1, 1000);
 
 	  HAL_GPIO_WritePin(EN_ACELERADOR_GPIO_Port, EN_ACELERADOR_Pin, 1);
 
 
 
-	  if(aceleradorLocal > 128 ) {
+	  if(aceleradorSPI > 128 ) {
+		  aceleradorLocal = ((- 128 + ((int) aceleradorSPI ))*1.58);
+
 		  sprintf(transmissao, "valor Acelerador lido: %d\r\n", aceleradorLocal);
 		  HAL_UART_Transmit(&huart2, transmissao, strlen(transmissao), 1000);
+
+
+		  osMutexWait(MtxAceleradorHandle, 100);
+		  aceleradorGlobal = aceleradorLocal;
+		  osMutexRelease(MtxAceleradorHandle);
 	  }
 	  // ===============================================
 
@@ -413,45 +425,40 @@ void StartLeituraAcel(void const * argument)
 	  sensorOxg_TempLocal[1] = 0;
 
 	  HAL_GPIO_WritePin(EN_OXIGENIO_GPIO_Port, EN_OXIGENIO_Pin, 0);
-	  HAL_SPI_Receive(&hspi1, &sensorOxg_TempLocal[0], 1, 1000);
+	  HAL_SPI_Receive(&hspi1, &sensorOxg_TempSPI[0], 1, 1000);
 	  HAL_GPIO_WritePin(EN_OXIGENIO_GPIO_Port, EN_OXIGENIO_Pin, 1);
 
-	  if(sensorOxg_TempLocal[0] > 128){
+	  if(sensorOxg_TempSPI[0] > 128){
+
+		  sensorOxg_TempLocal[0] =  ((- 128 + ((int) sensorOxg_TempSPI[0] ))*1.58);
+
+
 		  sprintf (transmissao, "valor Oxigenio lido: %d\r\n", sensorOxg_TempLocal[0]);
 		  HAL_UART_Transmit(&huart2, transmissao, strlen(transmissao), 1000);
+
+		  osMutexWait(MtxAceleradorHandle, 100);
+		  sensorOxg_TempGlobal[0] = sensorOxg_TempLocal[0];
+		  osMutexRelease(MtxAceleradorHandle);
 	  }
 
 
 	  HAL_GPIO_WritePin(EN_TEMPERATURA_GPIO_Port, EN_TEMPERATURA_Pin, 0);
-	  HAL_SPI_Receive(&hspi1, &sensorOxg_TempLocal[1], 1, 1000);
+	  HAL_SPI_Receive(&hspi1, &sensorOxg_TempSPI[1], 1, 1000);
 	  HAL_GPIO_WritePin(EN_TEMPERATURA_GPIO_Port, EN_TEMPERATURA_Pin, 1);
 
-	  if(sensorOxg_TempLocal[1] > 128) {
+	  if(sensorOxg_TempSPI[1] > 128) {
+
+		  sensorOxg_TempLocal[1] =  ((- 128 + ((int) sensorOxg_TempSPI[1] ))*1.58);
+
 		  sprintf (transmissao, "valor Temperatura lido: %d\r\n", sensorOxg_TempLocal[1]);
 		  HAL_UART_Transmit(&huart2, transmissao, strlen(transmissao), 1000);
+
+
+		  osMutexWait(MtxAceleradorHandle, 100);
+		  sensorOxg_TempGlobal[1] = sensorOxg_TempLocal[1];
+		  osMutexRelease(MtxAceleradorHandle);
 	  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-	  osMutexWait(MtxAceleradorHandle,1000);
-
-	  aceleradorGlobal = aceleradorLocal;
-	  sensorOxg_TempGlobal[0] = sensorOxg_TempLocal[0];
-	  sensorOxg_TempGlobal[1] = sensorOxg_TempLocal[1];
-	  osMutexRelease(MtxAceleradorHandle);
-
 	  HAL_Delay(10);
-
   }
   /* USER CODE END 5 */
 }
@@ -485,7 +492,7 @@ void StartLeituraSens(void const * argument)
 void StartProcessamen(void const * argument)
 {
   /* USER CODE BEGIN StartProcessamen */
-	uint8_t aceleracaoLocal;
+	float aceleracaoLocal;
 	uint8_t temperaturaLocal;
 	uint8_t oxigenioLocal;
 	uint8_t qntCombustivelLocal;
