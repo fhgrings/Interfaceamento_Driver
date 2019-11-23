@@ -402,10 +402,10 @@ void StartLeituraAcel(void const * argument)
 
 
 
-	  sprintf(transmissao, "valor Acelerador lido: %d\r\n", aceleradorLocal);
-
-
-	  HAL_UART_Transmit(&huart2, transmissao, strlen(transmissao), 1000);
+	  if(aceleradorLocal > 128 ) {
+		  sprintf(transmissao, "valor Acelerador lido: %d\r\n", aceleradorLocal);
+		  HAL_UART_Transmit(&huart2, transmissao, strlen(transmissao), 1000);
+	  }
 	  // ===============================================
 
 
@@ -416,23 +416,35 @@ void StartLeituraAcel(void const * argument)
 	  HAL_SPI_Receive(&hspi1, &sensorOxg_TempLocal[0], 1, 1000);
 	  HAL_GPIO_WritePin(EN_OXIGENIO_GPIO_Port, EN_OXIGENIO_Pin, 1);
 
-
-	  sprintf (transmissao, "valor Oxigenio lido: %d\r\n", sensorOxg_TempLocal[0]);
-	  HAL_UART_Transmit(&huart2, transmissao, strlen(transmissao), 1000);
-
+	  if(sensorOxg_TempLocal[0] > 128){
+		  sprintf (transmissao, "valor Oxigenio lido: %d\r\n", sensorOxg_TempLocal[0]);
+		  HAL_UART_Transmit(&huart2, transmissao, strlen(transmissao), 1000);
+	  }
 
 
 	  HAL_GPIO_WritePin(EN_TEMPERATURA_GPIO_Port, EN_TEMPERATURA_Pin, 0);
 	  HAL_SPI_Receive(&hspi1, &sensorOxg_TempLocal[1], 1, 1000);
 	  HAL_GPIO_WritePin(EN_TEMPERATURA_GPIO_Port, EN_TEMPERATURA_Pin, 1);
 
+	  if(sensorOxg_TempLocal[1] > 128) {
+		  sprintf (transmissao, "valor Temperatura lido: %d\r\n", sensorOxg_TempLocal[1]);
+		  HAL_UART_Transmit(&huart2, transmissao, strlen(transmissao), 1000);
+	  }
 
-	  sprintf (transmissao, "valor Temperatura lido: %d\r\n", sensorOxg_TempLocal[1]);
-	  HAL_UART_Transmit(&huart2, transmissao, strlen(transmissao), 1000);
+
+
+
+
+
+
+
+
+
 
 
 
 	  osMutexWait(MtxAceleradorHandle,1000);
+
 	  aceleradorGlobal = aceleradorLocal;
 	  sensorOxg_TempGlobal[0] = sensorOxg_TempLocal[0];
 	  sensorOxg_TempGlobal[1] = sensorOxg_TempLocal[1];
@@ -542,21 +554,21 @@ void StartAcionamento(void const * argument)
 	  HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin, 1);
 	  HAL_GPIO_WritePin(LED_2_GPIO_Port, LED_2_Pin, 0);
 	  HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, 0);
-	  HAL_UART_Transmit(&huart2, "taskAcionamento 33\r\n", 33, 1000);
+//	  HAL_UART_Transmit(&huart2, "taskAcionamento 33\r\n", 33, 1000);
 	}
 
 	if(qntCombustivelLocal < 66 && qntCombustivelLocal >= 33) {
 	  HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin, 0);
 	  HAL_GPIO_WritePin(LED_2_GPIO_Port, LED_2_Pin, 1);
 	  HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, 0);
-	  HAL_UART_Transmit(&huart2, "taskAcionamento 55\r\n", 33, 1000);
+//	  HAL_UART_Transmit(&huart2, "taskAcionamento 55\r\n", 33, 1000);
 	}
 
 	if(qntCombustivelLocal >= 66) {
 	  HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin, 0);
 	  HAL_GPIO_WritePin(LED_2_GPIO_Port, LED_2_Pin, 0);
 	  HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, 1);
-	  HAL_UART_Transmit(&huart2, "taskAcionamento 66\r\n", 33, 1000);
+//	  HAL_UART_Transmit(&huart2, "taskAcionamento 66\r\n", 33, 1000);
 	}
 
     osDelay(10);
@@ -607,8 +619,8 @@ void StartEscritaDisplay(void const * argument)
 	  sprintf(bufferOxigenio, "Teste: %d\r\n\r\n", informacoesLocal[1]);
 
 
-	  HAL_UART_Transmit(&huart2, bufferAcelerador, 25, 1000);
-	  HAL_UART_Transmit(&huart2, bufferOxigenio, 17, 1000);
+//	  HAL_UART_Transmit(&huart2, bufferAcelerador, 25, 1000);
+//	  HAL_UART_Transmit(&huart2, bufferOxigenio, 17, 1000);
 
 //	  LCD_Write_String(0, 0, bufferAcelerador);
 //	  LCD_Write_String(0, 1, bufferOxigenio);

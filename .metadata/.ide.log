@@ -11038,3 +11038,1232 @@
 2019-11-18 14:30:22,409 [INFO] ProjectBuilder:2232 - Time for Generating toolchain IDE Files: 13361mS.
 2019-11-18 14:30:22,409 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 0mS.
 2019-11-18 14:30:22,425 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 0mS.
+2019-11-18 17:06:44,950 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-18 17:06:45,247 [ERROR] RtosPanel:541 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2019-11-18 17:08:19,077 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 486224736 Bytes (667942912)
+2019-11-18 17:08:19,077 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:08:19,077 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:08:19,077 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:08:19,077 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 17:08:19,077 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 17:08:19,077 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:08:20,108 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 496188248 Bytes (667942912)
+2019-11-18 17:08:20,108 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:08:20,108 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:08:20,108 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:08:20,108 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 17:08:20,108 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 17:08:20,108 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:08:21,092 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: SPI
+2019-11-18 17:08:21,092 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: NVIC
+2019-11-18 17:08:21,092 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: FREERTOS
+2019-11-18 17:08:21,092 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: USART
+2019-11-18 17:08:21,092 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: SYS
+2019-11-18 17:08:21,092 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: RCC
+2019-11-18 17:08:21,092 [INFO] CodeGenerator:583 - code generatio: config db path: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\
+2019-11-18 17:08:21,217 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\license.tmp_save
+2019-11-18 17:08:21,264 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\license.tmp
+2019-11-18 17:08:21,358 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\gpio.tmp_save
+2019-11-18 17:08:21,420 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\gpio.tmp
+2019-11-18 17:08:21,779 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 17:08:21,779 [INFO] Middleware:1071 - No code input for Bsp Dependency
+2019-11-18 17:08:21,811 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_inc.tmp_save
+2019-11-18 17:08:21,873 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_inc.tmp
+2019-11-18 17:08:21,904 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_vars.tmp_save
+2019-11-18 17:08:21,982 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_vars.tmp
+2019-11-18 17:08:21,998 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_pfp.tmp_save
+2019-11-18 17:08:22,045 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_pfp.tmp
+2019-11-18 17:08:22,061 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_HalInit.tmp_save
+2019-11-18 17:08:22,123 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_HalInit.tmp
+2019-11-18 17:08:22,139 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_start.tmp_save
+2019-11-18 17:08:22,201 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_start.tmp
+2019-11-18 17:08:22,217 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_threads.tmp_save
+2019-11-18 17:08:22,279 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_threads.tmp
+2019-11-18 17:08:22,310 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_user_threads.tmp_save
+2019-11-18 17:08:22,357 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_user_threads.tmp
+2019-11-18 17:08:22,389 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\FreeRTOSConfig.h_save
+2019-11-18 17:08:22,467 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\FreeRTOSConfig.h
+2019-11-18 17:08:22,498 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\freertos.c_save
+2019-11-18 17:08:22,576 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\freertos.c
+2019-11-18 17:08:22,576 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 17:08:22,576 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SPI
+2019-11-18 17:08:22,576 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 17:08:22,576 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 17:08:22,576 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-11-18 17:08:22,576 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 17:08:22,576 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 17:08:22,576 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-11-18 17:08:22,576 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 17:08:22,576 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-11-18 17:08:22,576 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 17:08:22,623 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_it.c_save
+2019-11-18 17:08:22,717 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_it.c
+2019-11-18 17:08:22,732 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_it.h_save
+2019-11-18 17:08:22,795 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_it.h
+2019-11-18 17:08:22,826 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_hal_msp.c_save
+2019-11-18 17:08:22,920 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_hal_msp.c
+2019-11-18 17:08:22,935 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\system.tmp_save
+2019-11-18 17:08:22,982 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\system.tmp
+2019-11-18 17:08:23,013 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_hal_conf.h_save
+2019-11-18 17:08:23,076 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_hal_conf.h
+2019-11-18 17:08:23,076 [WARN] IPConfigManager:2562 - IP not found : gpio
+2019-11-18 17:08:23,076 [WARN] CodeGenerator:2617 - IP not found : gpio
+2019-11-18 17:08:23,107 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\main.h_save
+2019-11-18 17:08:23,170 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\main.h
+2019-11-18 17:08:23,185 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\main.c_save
+2019-11-18 17:08:23,310 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\main.c
+2019-11-18 17:08:23,888 [INFO] ProjectBuilder:1570 - Time for Copy HAL[1] : 156mS.
+2019-11-18 17:08:23,888 [INFO] ProjectBuilder:2138 - Project Generator version: 3.4.0
+2019-11-18 17:08:24,029 [INFO] ConfigFileManager:879 - The Die is : DIE438
+2019-11-18 17:08:24,029 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-11-18 17:08:24,326 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="12"
+2019-11-18 17:08:24,326 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="CCMRAM" access="rw" start="0x10000000" size="4"
+2019-11-18 17:08:24,326 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="64"
+2019-11-18 17:08:24,482 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-11-18 17:08:24,482 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============update
+2019-11-18 17:08:25,263 [INFO] ProjectBuilder:2232 - Time for Generating toolchain IDE Files: 1375mS.
+2019-11-18 17:08:25,263 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 0mS.
+2019-11-18 17:08:25,263 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 0mS.
+2019-11-18 17:23:02,392 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 633771632 Bytes (875560960)
+2019-11-18 17:23:02,392 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:23:02,392 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:23:02,392 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:23:02,392 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 17:23:02,392 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 17:23:02,392 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:23:03,408 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 643623160 Bytes (875560960)
+2019-11-18 17:23:03,423 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:23:03,423 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:23:03,423 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:23:03,423 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 17:23:03,423 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 17:23:03,423 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 17:23:04,642 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: SPI
+2019-11-18 17:23:04,642 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: NVIC
+2019-11-18 17:23:04,642 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: FREERTOS
+2019-11-18 17:23:04,642 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: USART
+2019-11-18 17:23:04,642 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: SYS
+2019-11-18 17:23:04,642 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: RCC
+2019-11-18 17:23:04,642 [INFO] CodeGenerator:583 - code generatio: config db path: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\
+2019-11-18 17:23:04,767 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\license.tmp_save
+2019-11-18 17:23:04,861 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\license.tmp
+2019-11-18 17:23:04,923 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\gpio.tmp_save
+2019-11-18 17:23:04,970 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\gpio.tmp
+2019-11-18 17:23:05,173 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 17:23:05,173 [INFO] Middleware:1071 - No code input for Bsp Dependency
+2019-11-18 17:23:05,189 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_inc.tmp_save
+2019-11-18 17:23:05,236 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_inc.tmp
+2019-11-18 17:23:05,251 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_vars.tmp_save
+2019-11-18 17:23:05,298 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_vars.tmp
+2019-11-18 17:23:05,314 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_pfp.tmp_save
+2019-11-18 17:23:05,345 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_pfp.tmp
+2019-11-18 17:23:05,361 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_HalInit.tmp_save
+2019-11-18 17:23:05,407 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_HalInit.tmp
+2019-11-18 17:23:05,423 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_start.tmp_save
+2019-11-18 17:23:05,470 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_start.tmp
+2019-11-18 17:23:05,486 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_threads.tmp_save
+2019-11-18 17:23:05,532 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_threads.tmp
+2019-11-18 17:23:05,548 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_user_threads.tmp_save
+2019-11-18 17:23:05,579 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_user_threads.tmp
+2019-11-18 17:23:05,611 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\FreeRTOSConfig.h_save
+2019-11-18 17:23:05,689 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\FreeRTOSConfig.h
+2019-11-18 17:23:05,720 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\freertos.c_save
+2019-11-18 17:23:05,782 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\freertos.c
+2019-11-18 17:23:05,782 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 17:23:05,782 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SPI
+2019-11-18 17:23:05,782 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 17:23:05,782 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 17:23:05,782 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-11-18 17:23:05,782 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 17:23:05,782 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 17:23:05,782 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-11-18 17:23:05,782 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 17:23:05,782 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-11-18 17:23:05,782 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 17:23:05,814 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_it.c_save
+2019-11-18 17:23:05,892 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_it.c
+2019-11-18 17:23:05,907 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_it.h_save
+2019-11-18 17:23:05,970 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_it.h
+2019-11-18 17:23:06,001 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_hal_msp.c_save
+2019-11-18 17:23:06,126 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_hal_msp.c
+2019-11-18 17:23:06,142 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\system.tmp_save
+2019-11-18 17:23:06,188 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\system.tmp
+2019-11-18 17:23:06,204 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_hal_conf.h_save
+2019-11-18 17:23:06,267 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_hal_conf.h
+2019-11-18 17:23:06,282 [WARN] IPConfigManager:2562 - IP not found : gpio
+2019-11-18 17:23:06,282 [WARN] CodeGenerator:2617 - IP not found : gpio
+2019-11-18 17:23:06,298 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\main.h_save
+2019-11-18 17:23:06,360 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\main.h
+2019-11-18 17:23:06,376 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\main.c_save
+2019-11-18 17:23:06,501 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\main.c
+2019-11-18 17:23:07,063 [INFO] ProjectBuilder:1570 - Time for Copy HAL[1] : 187mS.
+2019-11-18 17:23:07,063 [INFO] ProjectBuilder:2138 - Project Generator version: 3.4.0
+2019-11-18 17:23:07,220 [INFO] ConfigFileManager:879 - The Die is : DIE438
+2019-11-18 17:23:07,220 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-11-18 17:23:07,282 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="12"
+2019-11-18 17:23:07,282 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="CCMRAM" access="rw" start="0x10000000" size="4"
+2019-11-18 17:23:07,282 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="64"
+2019-11-18 17:23:07,376 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-11-18 17:23:07,391 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============update
+2019-11-18 17:23:08,032 [INFO] ProjectBuilder:2232 - Time for Generating toolchain IDE Files: 969mS.
+2019-11-18 17:23:08,032 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 0mS.
+2019-11-18 17:23:08,032 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 0mS.
+2019-11-18 18:11:12,219 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 469836512 Bytes (878706688)
+2019-11-18 18:11:12,223 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:11:12,223 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:11:12,234 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:11:12,236 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 18:11:12,236 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 18:11:12,236 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:11:13,307 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 479683680 Bytes (878706688)
+2019-11-18 18:11:13,311 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:11:13,315 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:11:13,317 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:11:13,320 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 18:11:13,322 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 18:11:13,324 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:11:14,431 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: SPI
+2019-11-18 18:11:14,431 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: NVIC
+2019-11-18 18:11:14,431 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: FREERTOS
+2019-11-18 18:11:14,431 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: USART
+2019-11-18 18:11:14,431 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: SYS
+2019-11-18 18:11:14,432 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: RCC
+2019-11-18 18:11:14,432 [INFO] CodeGenerator:583 - code generatio: config db path: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\
+2019-11-18 18:11:14,679 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\license.tmp_save
+2019-11-18 18:11:14,779 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\license.tmp
+2019-11-18 18:11:14,880 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\gpio.tmp_save
+2019-11-18 18:11:14,955 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\gpio.tmp
+2019-11-18 18:11:15,330 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 18:11:15,330 [INFO] Middleware:1071 - No code input for Bsp Dependency
+2019-11-18 18:11:15,351 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_inc.tmp_save
+2019-11-18 18:11:15,443 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_inc.tmp
+2019-11-18 18:11:15,459 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_vars.tmp_save
+2019-11-18 18:11:15,543 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_vars.tmp
+2019-11-18 18:11:15,576 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_pfp.tmp_save
+2019-11-18 18:11:15,662 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_pfp.tmp
+2019-11-18 18:11:15,698 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_HalInit.tmp_save
+2019-11-18 18:11:15,785 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_HalInit.tmp
+2019-11-18 18:11:15,799 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_start.tmp_save
+2019-11-18 18:11:15,878 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_start.tmp
+2019-11-18 18:11:15,937 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_threads.tmp_save
+2019-11-18 18:11:16,104 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_threads.tmp
+2019-11-18 18:11:16,128 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_user_threads.tmp_save
+2019-11-18 18:11:16,238 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_user_threads.tmp
+2019-11-18 18:11:16,291 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\FreeRTOSConfig.h_save
+2019-11-18 18:11:16,538 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\FreeRTOSConfig.h
+2019-11-18 18:11:16,625 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\freertos.c_save
+2019-11-18 18:11:16,773 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\freertos.c
+2019-11-18 18:11:16,777 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 18:11:16,778 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SPI
+2019-11-18 18:11:16,778 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 18:11:16,778 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 18:11:16,778 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-11-18 18:11:16,778 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 18:11:16,778 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 18:11:16,778 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-11-18 18:11:16,778 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 18:11:16,783 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-11-18 18:11:16,784 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 18:11:16,833 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_it.c_save
+2019-11-18 18:11:16,968 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_it.c
+2019-11-18 18:11:17,012 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_it.h_save
+2019-11-18 18:11:17,127 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_it.h
+2019-11-18 18:11:17,166 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_hal_msp.c_save
+2019-11-18 18:11:17,380 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_hal_msp.c
+2019-11-18 18:11:17,415 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\system.tmp_save
+2019-11-18 18:11:17,522 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\system.tmp
+2019-11-18 18:11:17,562 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_hal_conf.h_save
+2019-11-18 18:11:17,731 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_hal_conf.h
+2019-11-18 18:11:17,748 [WARN] IPConfigManager:2562 - IP not found : gpio
+2019-11-18 18:11:17,749 [WARN] CodeGenerator:2617 - IP not found : gpio
+2019-11-18 18:11:17,798 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\main.h_save
+2019-11-18 18:11:17,930 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\main.h
+2019-11-18 18:11:17,984 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\main.c_save
+2019-11-18 18:11:18,257 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\main.c
+2019-11-18 18:11:19,282 [INFO] ProjectBuilder:1570 - Time for Copy HAL[1] : 369mS.
+2019-11-18 18:11:19,288 [INFO] ProjectBuilder:2138 - Project Generator version: 3.4.0
+2019-11-18 18:11:19,573 [INFO] ConfigFileManager:879 - The Die is : DIE438
+2019-11-18 18:11:19,573 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-11-18 18:11:19,686 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="12"
+2019-11-18 18:11:19,686 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="CCMRAM" access="rw" start="0x10000000" size="4"
+2019-11-18 18:11:19,686 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="64"
+2019-11-18 18:11:20,070 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-11-18 18:11:20,071 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============update
+2019-11-18 18:11:20,663 [INFO] ProjectBuilder:2232 - Time for Generating toolchain IDE Files: 1375mS.
+2019-11-18 18:11:20,665 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 1mS.
+2019-11-18 18:11:20,673 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 0mS.
+2019-11-18 18:16:46,759 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 566164592 Bytes (918552576)
+2019-11-18 18:16:46,767 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:16:46,772 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:16:46,775 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:16:46,775 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 18:16:46,784 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 18:16:46,786 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:16:47,821 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 575832328 Bytes (918552576)
+2019-11-18 18:16:47,837 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:16:47,841 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:16:47,844 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:16:47,848 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 18:16:47,853 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 18:16:47,857 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 18:16:49,221 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: SPI
+2019-11-18 18:16:49,221 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: NVIC
+2019-11-18 18:16:49,221 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: FREERTOS
+2019-11-18 18:16:49,221 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: USART
+2019-11-18 18:16:49,221 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: SYS
+2019-11-18 18:16:49,221 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: RCC
+2019-11-18 18:16:49,226 [INFO] CodeGenerator:583 - code generatio: config db path: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\
+2019-11-18 18:16:49,551 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\license.tmp_save
+2019-11-18 18:16:49,662 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\license.tmp
+2019-11-18 18:16:49,810 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\gpio.tmp_save
+2019-11-18 18:16:49,955 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\gpio.tmp
+2019-11-18 18:16:50,475 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 18:16:50,480 [INFO] Middleware:1071 - No code input for Bsp Dependency
+2019-11-18 18:16:50,504 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_inc.tmp_save
+2019-11-18 18:16:50,604 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_inc.tmp
+2019-11-18 18:16:50,620 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_vars.tmp_save
+2019-11-18 18:16:50,734 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_vars.tmp
+2019-11-18 18:16:50,753 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_pfp.tmp_save
+2019-11-18 18:16:50,893 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_pfp.tmp
+2019-11-18 18:16:50,917 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_HalInit.tmp_save
+2019-11-18 18:16:51,065 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_HalInit.tmp
+2019-11-18 18:16:51,107 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_start.tmp_save
+2019-11-18 18:16:51,241 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_start.tmp
+2019-11-18 18:16:51,259 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_threads.tmp_save
+2019-11-18 18:16:51,404 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_threads.tmp
+2019-11-18 18:16:51,431 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_user_threads.tmp_save
+2019-11-18 18:16:51,573 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_user_threads.tmp
+2019-11-18 18:16:51,615 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\FreeRTOSConfig.h_save
+2019-11-18 18:16:51,823 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\FreeRTOSConfig.h
+2019-11-18 18:16:51,864 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\freertos.c_save
+2019-11-18 18:16:51,972 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\freertos.c
+2019-11-18 18:16:51,974 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 18:16:51,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SPI
+2019-11-18 18:16:51,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 18:16:51,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 18:16:51,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-11-18 18:16:51,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 18:16:51,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 18:16:51,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-11-18 18:16:51,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 18:16:51,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-11-18 18:16:51,975 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 18:16:52,047 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_it.c_save
+2019-11-18 18:16:52,208 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_it.c
+2019-11-18 18:16:52,231 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_it.h_save
+2019-11-18 18:16:52,347 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_it.h
+2019-11-18 18:16:52,395 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_hal_msp.c_save
+2019-11-18 18:16:52,594 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_hal_msp.c
+2019-11-18 18:16:52,615 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\system.tmp_save
+2019-11-18 18:16:52,745 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\system.tmp
+2019-11-18 18:16:52,822 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_hal_conf.h_save
+2019-11-18 18:16:52,979 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_hal_conf.h
+2019-11-18 18:16:53,002 [WARN] IPConfigManager:2562 - IP not found : gpio
+2019-11-18 18:16:53,002 [WARN] CodeGenerator:2617 - IP not found : gpio
+2019-11-18 18:16:53,096 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\main.h_save
+2019-11-18 18:16:53,238 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\main.h
+2019-11-18 18:16:53,286 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\main.c_save
+2019-11-18 18:16:53,586 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\main.c
+2019-11-18 18:16:54,654 [INFO] ProjectBuilder:1570 - Time for Copy HAL[1] : 370mS.
+2019-11-18 18:16:54,654 [INFO] ProjectBuilder:2138 - Project Generator version: 3.4.0
+2019-11-18 18:16:55,055 [INFO] ConfigFileManager:879 - The Die is : DIE438
+2019-11-18 18:16:55,073 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-11-18 18:16:55,223 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="12"
+2019-11-18 18:16:55,223 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="CCMRAM" access="rw" start="0x10000000" size="4"
+2019-11-18 18:16:55,223 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="64"
+2019-11-18 18:16:55,373 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-11-18 18:16:55,374 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============update
+2019-11-18 18:16:56,219 [INFO] ProjectBuilder:2232 - Time for Generating toolchain IDE Files: 1565mS.
+2019-11-18 18:16:56,220 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 1mS.
+2019-11-18 18:16:56,225 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 0mS.
+2019-11-18 18:41:48,975 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-18 21:20:06,814 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 605330008 Bytes (918552576)
+2019-11-18 21:20:06,816 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:20:06,819 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:20:06,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:20:06,821 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 21:20:06,823 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 21:20:06,823 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:20:08,296 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 615223384 Bytes (918552576)
+2019-11-18 21:20:08,300 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:20:08,301 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:20:08,303 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:20:08,304 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 21:20:08,307 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 21:20:08,307 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:20:10,110 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: SPI
+2019-11-18 21:20:10,111 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: NVIC
+2019-11-18 21:20:10,111 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: FREERTOS
+2019-11-18 21:20:10,111 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: USART
+2019-11-18 21:20:10,111 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: SYS
+2019-11-18 21:20:10,111 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: RCC
+2019-11-18 21:20:10,113 [INFO] CodeGenerator:583 - code generatio: config db path: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\
+2019-11-18 21:20:10,336 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\license.tmp_save
+2019-11-18 21:20:10,447 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\license.tmp
+2019-11-18 21:20:10,609 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\gpio.tmp_save
+2019-11-18 21:20:10,730 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\gpio.tmp
+2019-11-18 21:20:11,210 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 21:20:11,215 [INFO] Middleware:1071 - No code input for Bsp Dependency
+2019-11-18 21:20:11,245 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_inc.tmp_save
+2019-11-18 21:20:11,368 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_inc.tmp
+2019-11-18 21:20:11,403 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_vars.tmp_save
+2019-11-18 21:20:11,513 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_vars.tmp
+2019-11-18 21:20:11,562 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_pfp.tmp_save
+2019-11-18 21:20:11,703 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_pfp.tmp
+2019-11-18 21:20:11,754 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_HalInit.tmp_save
+2019-11-18 21:20:11,874 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_HalInit.tmp
+2019-11-18 21:20:11,913 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_start.tmp_save
+2019-11-18 21:20:12,017 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_start.tmp
+2019-11-18 21:20:12,051 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_threads.tmp_save
+2019-11-18 21:20:12,160 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_threads.tmp
+2019-11-18 21:20:12,203 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_user_threads.tmp_save
+2019-11-18 21:20:12,326 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_user_threads.tmp
+2019-11-18 21:20:12,376 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\FreeRTOSConfig.h_save
+2019-11-18 21:20:12,633 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\FreeRTOSConfig.h
+2019-11-18 21:20:12,725 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\freertos.c_save
+2019-11-18 21:20:12,884 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\freertos.c
+2019-11-18 21:20:12,888 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 21:20:12,889 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SPI
+2019-11-18 21:20:12,889 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 21:20:12,893 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 21:20:12,893 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-11-18 21:20:12,894 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 21:20:12,894 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 21:20:12,894 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-11-18 21:20:12,898 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 21:20:12,898 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-11-18 21:20:12,898 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 21:20:12,954 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_it.c_save
+2019-11-18 21:20:13,113 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_it.c
+2019-11-18 21:20:13,150 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_it.h_save
+2019-11-18 21:20:13,313 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_it.h
+2019-11-18 21:20:13,375 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_hal_msp.c_save
+2019-11-18 21:20:13,582 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_hal_msp.c
+2019-11-18 21:20:13,627 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\system.tmp_save
+2019-11-18 21:20:13,739 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\system.tmp
+2019-11-18 21:20:13,793 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_hal_conf.h_save
+2019-11-18 21:20:13,965 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_hal_conf.h
+2019-11-18 21:20:13,983 [WARN] IPConfigManager:2562 - IP not found : gpio
+2019-11-18 21:20:13,984 [WARN] CodeGenerator:2617 - IP not found : gpio
+2019-11-18 21:20:14,034 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\main.h_save
+2019-11-18 21:20:14,319 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\main.h
+2019-11-18 21:20:14,374 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\main.c_save
+2019-11-18 21:20:14,595 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\main.c
+2019-11-18 21:20:15,581 [INFO] ProjectBuilder:1570 - Time for Copy HAL[1] : 354mS.
+2019-11-18 21:20:15,582 [INFO] ProjectBuilder:2138 - Project Generator version: 3.4.0
+2019-11-18 21:20:15,839 [INFO] ConfigFileManager:879 - The Die is : DIE438
+2019-11-18 21:20:15,843 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-11-18 21:20:16,042 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="12"
+2019-11-18 21:20:16,043 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="CCMRAM" access="rw" start="0x10000000" size="4"
+2019-11-18 21:20:16,043 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="64"
+2019-11-18 21:20:16,621 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-11-18 21:20:16,622 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============update
+2019-11-18 21:20:17,192 [INFO] ProjectBuilder:2232 - Time for Generating toolchain IDE Files: 1610mS.
+2019-11-18 21:20:17,194 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 1mS.
+2019-11-18 21:20:17,205 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 0mS.
+2019-11-18 21:22:25,227 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 464026568 Bytes (940572672)
+2019-11-18 21:22:25,233 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:22:25,233 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:22:25,237 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:22:25,243 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 21:22:25,247 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 21:22:25,250 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:22:25,903 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 473956096 Bytes (940572672)
+2019-11-18 21:22:25,910 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:22:25,911 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:22:25,913 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:22:25,916 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 21:22:25,917 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-18 21:22:25,919 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-18 21:22:28,040 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: SPI
+2019-11-18 21:22:28,041 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: NVIC
+2019-11-18 21:22:28,041 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: FREERTOS
+2019-11-18 21:22:28,041 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: USART
+2019-11-18 21:22:28,041 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: SYS
+2019-11-18 21:22:28,042 [INFO] BlockDiagram:1862 - set Specific Code input for plugin: RCC
+2019-11-18 21:22:28,043 [INFO] CodeGenerator:583 - code generatio: config db path: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\
+2019-11-18 21:22:28,262 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\license.tmp_save
+2019-11-18 21:22:28,364 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\license.tmp
+2019-11-18 21:22:28,465 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\gpio.tmp_save
+2019-11-18 21:22:28,586 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\gpio.tmp
+2019-11-18 21:22:28,880 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 21:22:28,897 [INFO] Middleware:1071 - No code input for Bsp Dependency
+2019-11-18 21:22:28,918 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_inc.tmp_save
+2019-11-18 21:22:29,004 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_inc.tmp
+2019-11-18 21:22:29,036 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_vars.tmp_save
+2019-11-18 21:22:29,173 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_vars.tmp
+2019-11-18 21:22:29,205 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_pfp.tmp_save
+2019-11-18 21:22:29,333 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_pfp.tmp
+2019-11-18 21:22:29,397 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_HalInit.tmp_save
+2019-11-18 21:22:29,505 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_HalInit.tmp
+2019-11-18 21:22:29,535 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_start.tmp_save
+2019-11-18 21:22:29,643 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_start.tmp
+2019-11-18 21:22:29,775 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_threads.tmp_save
+2019-11-18 21:22:29,879 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_threads.tmp
+2019-11-18 21:22:29,900 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_user_threads.tmp_save
+2019-11-18 21:22:29,999 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\rtos_user_threads.tmp
+2019-11-18 21:22:30,047 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\FreeRTOSConfig.h_save
+2019-11-18 21:22:30,232 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\FreeRTOSConfig.h
+2019-11-18 21:22:30,286 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\freertos.c_save
+2019-11-18 21:22:30,390 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\freertos.c
+2019-11-18 21:22:30,394 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 21:22:30,394 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SPI
+2019-11-18 21:22:30,394 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 21:22:30,398 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 21:22:30,398 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-11-18 21:22:30,398 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 21:22:30,402 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2019-11-18 21:22:30,402 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2019-11-18 21:22:30,402 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 21:22:30,406 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-11-18 21:22:30,406 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2019-11-18 21:22:30,454 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_it.c_save
+2019-11-18 21:22:30,609 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_it.c
+2019-11-18 21:22:30,644 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_it.h_save
+2019-11-18 21:22:30,730 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_it.h
+2019-11-18 21:22:30,785 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_hal_msp.c_save
+2019-11-18 21:22:30,969 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\stm32f3xx_hal_msp.c
+2019-11-18 21:22:31,005 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\system.tmp_save
+2019-11-18 21:22:31,141 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\MXTmpFiles\system.tmp
+2019-11-18 21:22:31,191 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_hal_conf.h_save
+2019-11-18 21:22:31,346 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\stm32f3xx_hal_conf.h
+2019-11-18 21:22:31,362 [WARN] IPConfigManager:2562 - IP not found : gpio
+2019-11-18 21:22:31,362 [WARN] CodeGenerator:2617 - IP not found : gpio
+2019-11-18 21:22:31,413 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\main.h_save
+2019-11-18 21:22:31,539 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Inc\main.h
+2019-11-18 21:22:31,596 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\main.c_save
+2019-11-18 21:22:31,839 [INFO] CodeEngine:208 - Generated code: C:\Users\felip\Desktop\Code\Faculdade\Interfaceamento_Driver\InjecaoEletronica_Projeto_GB\Src\main.c
+2019-11-18 21:22:32,778 [INFO] ProjectBuilder:1570 - Time for Copy HAL[1] : 354mS.
+2019-11-18 21:22:32,783 [INFO] ProjectBuilder:2138 - Project Generator version: 3.4.0
+2019-11-18 21:22:33,388 [INFO] ConfigFileManager:879 - The Die is : DIE438
+2019-11-18 21:22:33,389 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-11-18 21:22:33,564 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="12"
+2019-11-18 21:22:33,568 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="CCMRAM" access="rw" start="0x10000000" size="4"
+2019-11-18 21:22:33,568 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="64"
+2019-11-18 21:22:34,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-11-18 21:22:34,008 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============update
+2019-11-18 21:22:34,653 [INFO] ProjectBuilder:2232 - Time for Generating toolchain IDE Files: 1870mS.
+2019-11-18 21:22:34,654 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 1mS.
+2019-11-18 21:22:34,665 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 0mS.
+2019-11-18 22:10:41,496 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-18 22:10:41,639 [ERROR] RtosPanel:541 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2019-11-18 23:12:43,604 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 09:49:12,986 [INFO] Activator:176 - 
+
+
+2019-11-23 09:49:12,992 [INFO] Activator:177 - !SESSION log4j initialized
+2019-11-23 10:18:04,183 [INFO] ApplicationProperties:181 - Using Application install path: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903
+2019-11-23 10:18:04,248 [INFO] DbMcusXml:68 - Set database path to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/
+2019-11-23 10:18:04,264 [INFO] DbBoardsPdsc:54 - Set plugin database path to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/boardmanager/
+2019-11-23 10:18:04,264 [INFO] DbMcus:264 - Set plugin images path to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-11-23 10:18:04,272 [INFO] DbBoards:232 - Set plugin images path to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-11-23 10:18:04,273 [INFO] APIGFXSelector:72 - Set database path to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/mcu/
+2019-11-23 10:18:04,422 [INFO] DbMcusAds:72 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-23 10:18:04,429 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-23 10:18:04,437 [INFO] DbMcusJson:59 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-23 10:18:04,442 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-23 10:18:04,444 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-23 10:18:04,733 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-11-23 10:18:05,076 [INFO] RulesReader:52 - Compatibility file has been processed (156 Rules)
+2019-11-23 10:18:05,341 [INFO] MicroXplorer:521 - Detected Java Version = 1.8.0_202
+2019-11-23 10:18:05,343 [INFO] DbMcusXml:68 - Set database path to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/
+2019-11-23 10:18:05,343 [INFO] DbBoardsPdsc:54 - Set plugin database path to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/boardmanager/
+2019-11-23 10:18:05,347 [INFO] DbMcus:264 - Set plugin images path to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-11-23 10:18:05,348 [INFO] DbBoards:232 - Set plugin images path to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-11-23 10:18:05,348 [INFO] APIGFXSelector:72 - Set database path to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/mcu/
+2019-11-23 10:18:05,349 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\felip\.stmcufinder\plugins\mcufinder/ => C:\Users\felip\.stmcufinder\plugins\mcufinder
+2019-11-23 10:18:05,350 [INFO] DbMcusAds:72 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-23 10:18:05,350 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\felip\.stmcufinder\plugins\mcufinder/ => C:\Users\felip\.stmcufinder\plugins\mcufinder
+2019-11-23 10:18:05,350 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-23 10:18:05,353 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\felip\.stmcufinder\plugins\mcufinder/ => C:\Users\felip\.stmcufinder\plugins\mcufinder
+2019-11-23 10:18:05,354 [INFO] DbMcusJson:59 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-23 10:18:05,354 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\felip\.stmcufinder\plugins\mcufinder/ => C:\Users\felip\.stmcufinder\plugins\mcufinder
+2019-11-23 10:18:05,355 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-23 10:18:05,356 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\felip\.stmcufinder\plugins\mcufinder/ => C:\Users\felip\.stmcufinder\plugins\mcufinder
+2019-11-23 10:18:05,357 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-23 10:18:05,357 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\felip\.stmcufinder\plugins\mcufinder/ => C:\Users\felip\.stmcufinder\plugins\mcufinder
+2019-11-23 10:18:05,357 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\felip\.stmcufinder\plugins\mcufinder/ => C:\Users\felip\.stmcufinder\plugins\mcufinder
+2019-11-23 10:18:05,357 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-11-23 10:18:05,564 [INFO] MainPanel:211 - HeapMemory: 299892736
+2019-11-23 10:18:05,690 [INFO] DbMcusXml:68 - Set database path to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/
+2019-11-23 10:18:05,690 [INFO] DbBoardsPdsc:54 - Set plugin database path to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/boardmanager/
+2019-11-23 10:18:05,690 [INFO] DbMcus:264 - Set plugin images path to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-11-23 10:18:05,691 [INFO] DbBoards:232 - Set plugin images path to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/images/
+2019-11-23 10:18:05,692 [INFO] APIGFXSelector:72 - Set database path to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/plugins/mcufinder/mcu/
+2019-11-23 10:18:05,693 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\felip\.stmcufinder\plugins\mcufinder/ => C:\Users\felip\.stmcufinder\plugins\mcufinder
+2019-11-23 10:18:05,693 [INFO] DbMcusAds:72 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-23 10:18:05,693 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\felip\.stmcufinder\plugins\mcufinder/ => C:\Users\felip\.stmcufinder\plugins\mcufinder
+2019-11-23 10:18:05,694 [INFO] DbMcusDocs:92 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-23 10:18:05,694 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\felip\.stmcufinder\plugins\mcufinder/ => C:\Users\felip\.stmcufinder\plugins\mcufinder
+2019-11-23 10:18:05,694 [INFO] DbMcusJson:59 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-23 10:18:05,695 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\felip\.stmcufinder\plugins\mcufinder/ => C:\Users\felip\.stmcufinder\plugins\mcufinder
+2019-11-23 10:18:05,695 [INFO] DbBoardsDocs:84 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-23 10:18:05,695 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\felip\.stmcufinder\plugins\mcufinder/ => C:\Users\felip\.stmcufinder\plugins\mcufinder
+2019-11-23 10:18:05,696 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/
+2019-11-23 10:18:05,696 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\felip\.stmcufinder\plugins\mcufinder/ => C:\Users\felip\.stmcufinder\plugins\mcufinder
+2019-11-23 10:18:05,696 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\felip\.stmcufinder\plugins\mcufinder/ => C:\Users\felip\.stmcufinder\plugins\mcufinder
+2019-11-23 10:18:05,696 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\felip\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-11-23 10:18:05,723 [INFO] ApplicationProperties:181 - Using Application install path: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903
+2019-11-23 10:18:05,725 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=]
+2019-11-23 10:18:05,730 [INFO] PluginManage:292 - Check plugin analytics
+2019-11-23 10:18:05,808 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2019-11-23 10:18:05,808 [INFO] PluginManage:292 - Check plugin clock
+2019-11-23 10:18:05,886 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2019-11-23 10:18:05,886 [INFO] PluginManage:292 - Check plugin ddr
+2019-11-23 10:18:05,927 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2019-11-23 10:18:05,930 [INFO] PluginManage:292 - Check plugin filemanager
+2019-11-23 10:18:06,204 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2019-11-23 10:18:06,204 [INFO] PluginManage:292 - Check plugin ipmanager
+2019-11-23 10:18:06,245 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2019-11-23 10:18:06,245 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2019-11-23 10:18:06,306 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2019-11-23 10:18:06,313 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2019-11-23 10:18:06,429 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2019-11-23 10:18:06,429 [INFO] PluginManage:292 - Check plugin power
+2019-11-23 10:18:06,540 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2019-11-23 10:18:06,540 [INFO] PluginManage:292 - Check plugin projectmanager
+2019-11-23 10:18:06,628 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2019-11-23 10:18:06,628 [INFO] PluginManage:292 - Check plugin thirdparty
+2019-11-23 10:18:06,889 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/felip/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 66 ms. number of Sw pack : 8
+2019-11-23 10:18:06,920 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2019-11-23 10:18:06,920 [INFO] PluginManage:292 - Check plugin tools
+2019-11-23 10:18:07,029 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2019-11-23 10:18:07,029 [INFO] PluginManage:292 - Check plugin updater
+2019-11-23 10:18:07,079 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2019-11-23 10:18:07,079 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2019-11-23 10:18:07,565 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-23 10:18:07,855 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:07,855 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2019-11-23 10:18:07,977 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:07,978 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2019-11-23 10:18:08,158 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:08,158 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2019-11-23 10:18:08,221 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:08,221 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2019-11-23 10:18:08,289 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:08,289 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2019-11-23 10:18:08,367 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:08,367 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2019-11-23 10:18:08,399 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:08,399 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2019-11-23 10:18:08,453 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:08,453 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2019-11-23 10:18:08,582 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:08,582 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2019-11-23 10:18:08,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:08,637 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2019-11-23 10:18:08,715 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:08,715 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2019-11-23 10:18:08,889 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:08,889 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2019-11-23 10:18:09,144 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:09,144 [INFO] PluginManager:200 - loadIPPluginJar : add gfxsimulator
+2019-11-23 10:18:09,336 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:09,336 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2019-11-23 10:18:09,382 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:09,382 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2019-11-23 10:18:09,464 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:09,464 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2019-11-23 10:18:09,559 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:09,559 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2019-11-23 10:18:09,638 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:09,638 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2019-11-23 10:18:09,847 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:09,847 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2019-11-23 10:18:09,993 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:09,993 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2019-11-23 10:18:10,047 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:10,048 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2019-11-23 10:18:10,095 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:10,095 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2019-11-23 10:18:10,218 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:10,218 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2019-11-23 10:18:10,326 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:10,326 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2019-11-23 10:18:10,371 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:10,371 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2019-11-23 10:18:10,433 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:10,433 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2019-11-23 10:18:10,481 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:10,486 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2019-11-23 10:18:10,597 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:10,597 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2019-11-23 10:18:10,675 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:10,675 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2019-11-23 10:18:10,788 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:10,788 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2019-11-23 10:18:10,835 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:10,835 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2019-11-23 10:18:10,947 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:10,947 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2019-11-23 10:18:10,982 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:10,998 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2019-11-23 10:18:11,068 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:11,078 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2019-11-23 10:18:11,144 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:11,144 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2019-11-23 10:18:11,207 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:11,207 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2019-11-23 10:18:11,269 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:11,269 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2019-11-23 10:18:12,382 [INFO] BoardConnectionPanel:217 - [DDR PANEL] osNameString: Windows
+2019-11-23 10:18:12,933 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-11-23 10:18:12,934 [ERROR] IntegrityCheckThread:230 - Cannot obtain thirdParties list 21
+2019-11-23 10:18:12,935 [ERROR] IntegrityCheckThread:99 - Unexpected exception IntegrityCheckThread Thread: Updater error
+2019-11-23 10:18:12,938 [INFO] ThirdPartyDb:264 - Close Third Party DataBase File (C:/Users/felip/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2019-11-23 10:18:12,979 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-11-23 10:18:14,146 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-11-23 10:18:14,178 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-23 10:18:14,184 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-11-23 10:18:14,208 [INFO] MainDdrPanel:82 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.0.0.201904021149\tools\bin
+2019-11-23 10:18:14,381 [INFO] Updater:860 - Updater Version found : 5.3.0
+2019-11-23 10:18:14,418 [INFO] ApplicationProperties:181 - Using Application install path: D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903
+2019-11-23 10:18:14,771 [INFO] MainUpdater:2040 - connection check result : 10
+2019-11-23 10:18:14,771 [INFO] MainUpdater:229 - Updater Check For Update Now.
+2019-11-23 10:18:14,771 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-23 10:18:14,844 [INFO] CheckServerUpdateThread:121 - End of CheckServer Thread
+2019-11-23 10:18:15,007 [INFO] MainUpdater:2040 - connection check result : 10
+2019-11-23 10:18:15,007 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-11-23 10:18:15,758 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-23 10:18:15,759 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-23 10:18:15,770 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-23 10:18:15,773 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 245304120 Bytes (299892736)
+2019-11-23 10:18:15,777 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-23 10:18:15,777 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-23 10:18:15,777 [INFO] OpenFileManager:269 - Change cursor
+2019-11-23 10:18:24,083 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (FLatency) has Id (AdvancedSettings) currently not set
+2019-11-23 10:18:24,083 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-11-23 10:18:24,083 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2019-11-23 10:18:24,449 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 279380328 Bytes (578813952)
+2019-11-23 10:18:24,464 [INFO] ThirdPartyDb:294 - Open Third Party DataBase File (C:/Users/felip/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 0 ms. number of Sw pack : 8
+2019-11-23 10:18:24,722 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-11-23 10:18:24,723 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.2.0
+2019-11-23 10:18:24,723 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.0.0
+2019-11-23 10:18:24,723 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.4.1
+2019-11-23 10:18:24,723 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.0.0
+2019-11-23 10:18:24,723 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-11-23 10:18:24,723 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-11-23 10:18:24,723 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-11-23 10:18:25,125 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-23 10:18:25,129 [INFO] PinOutPanel:1367 - setPackage(STM32F334R8Tx,LQFP64)
+2019-11-23 10:18:26,301 [INFO] UtilMem:74 - Before build in PCC Used Memory: 410225872 Bytes (578813952)
+2019-11-23 10:18:27,030 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/felip/.stm32cubemx/plugins/power
+2019-11-23 10:18:27,041 [INFO] UtilMem:74 - After build in PCC Used Memory: 424905936 Bytes (578813952)
+2019-11-23 10:18:27,067 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:18:27,068 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,069 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,069 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,069 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,069 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,069 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,069 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,069 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,069 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,069 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,069 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,069 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,069 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,077 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,077 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,077 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,077 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,077 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,077 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,077 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,077 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,077 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,081 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,082 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,082 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,082 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,082 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,082 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,082 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,082 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,082 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,082 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,082 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,082 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,088 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,088 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,089 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:18:27,171 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:18:27,187 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2019-11-23 10:18:27,192 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:18:27,195 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:18:27,313 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:18:27,316 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:18:27,317 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:18:27,317 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:18:27,324 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:18:27,326 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:18:27,339 [INFO] OpenFileManager:289 - Restore cursor
+2019-11-23 10:18:27,344 [INFO] DbMcusXml:106 - Load MCU database from D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/families.xml
+2019-11-23 10:18:27,344 [INFO] DbMcusXml:106 - Load MCU database from D:\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_5.3.0.201907110903\\db\/mcu/families.xml
+2019-11-23 10:18:28,674 [INFO] DbMcusJson:87 - JSON generation date=Mon Sep 23 06:35:45 BRT 2019 (1569231345)
+2019-11-23 10:18:28,686 [INFO] DbMcusJson:87 - JSON generation date=Mon Sep 23 06:35:45 BRT 2019 (1569231345)
+2019-11-23 10:18:30,840 [INFO] DbMcus:193 - Found 1496 MCUs (1455 are supported by CubeMX, 1455 are visible in CubeMX)
+2019-11-23 10:18:30,843 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "Thread-2314" java.util.ConcurrentModificationException
+2019-11-23 10:18:30,843 [INFO] ApiDb:147 - User favorites file not found: C:\Users\felip/.stm32cubemx/favorites.mcus.txt
+2019-11-23 10:18:30,843 [INFO] DbMcus:205 - Set 0 / 0 favorites MCUs
+2019-11-23 10:18:30,844 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.util.ArrayList$Itr.checkForComodification(ArrayList.java:909)
+2019-11-23 10:18:30,845 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.util.ArrayList$Itr.next(ArrayList.java:859)
+2019-11-23 10:18:30,845 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.mcufinder.db.DbMcusXml.mcusCompletion(DbMcusXml.java:383)
+2019-11-23 10:18:30,845 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.mcufinder.db.DbMcus.getDbManager(DbMcus.java:182)
+2019-11-23 10:18:30,845 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.mcufinder.db.DbUtils.getRefNameFeature(DbUtils.java:356)
+2019-11-23 10:18:30,852 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.mcufinder.db.DbUtils.getRpnOfRefName(DbUtils.java:376)
+2019-11-23 10:18:30,852 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.microxplorer.plugins.filemanager.engine.OpenFileManager$1.run(OpenFileManager.java:238)
+2019-11-23 10:18:30,855 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.lang.Thread.run(Thread.java:748)
+2019-11-23 10:18:30,861 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:18:30,872 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:18:30,875 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:18:30,876 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:18:30,876 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:18:30,876 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:18:31,250 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:18:31,262 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:18:31,262 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:18:31,262 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:18:31,262 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:18:31,262 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:18:31,262 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:18:31,360 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:22:32,601 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:22:33,515 [INFO] MainUpdater:2040 - connection check result : 10
+2019-11-23 10:22:33,516 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-11-23 10:22:33,654 [INFO] I2cTimingTraitement:320 - 0x2000090E
+2019-11-23 10:22:33,681 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-23 10:22:33,681 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-23 10:22:33,687 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-23 10:22:33,691 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 490931672 Bytes (627048448)
+2019-11-23 10:22:33,692 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-23 10:22:33,694 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-23 10:22:33,694 [INFO] OpenFileManager:269 - Change cursor
+2019-11-23 10:22:37,942 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (FLatency) has Id (AdvancedSettings) currently not set
+2019-11-23 10:22:37,944 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-11-23 10:22:37,945 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2019-11-23 10:22:38,191 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 467026496 Bytes (627048448)
+2019-11-23 10:22:38,215 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-11-23 10:22:38,231 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.2.0
+2019-11-23 10:22:38,232 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.0.0
+2019-11-23 10:22:38,232 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.4.1
+2019-11-23 10:22:38,232 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.0.0
+2019-11-23 10:22:38,232 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-11-23 10:22:38,232 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-11-23 10:22:38,232 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-11-23 10:22:38,434 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-23 10:22:38,434 [INFO] PinOutPanel:1367 - setPackage(STM32F334R8Tx,LQFP64)
+2019-11-23 10:22:39,134 [INFO] UtilMem:74 - Before build in PCC Used Memory: 335424232 Bytes (627048448)
+2019-11-23 10:22:39,346 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/felip/.stm32cubemx/plugins/power
+2019-11-23 10:22:39,346 [INFO] UtilMem:74 - After build in PCC Used Memory: 343634536 Bytes (627048448)
+2019-11-23 10:22:39,354 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,354 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,361 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,361 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,361 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,361 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,362 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,362 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,362 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,362 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,362 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,362 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,362 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,362 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,362 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,362 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,362 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,362 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,362 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,365 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,365 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,365 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:22:39,526 [INFO] ApiDbMcu:444 - Load IP Config File for FREERTOS
+2019-11-23 10:22:39,537 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:22:39,545 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:22:39,545 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:22:39,545 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:22:39,545 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:22:39,561 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:22:39,561 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:22:39,572 [INFO] OpenFileManager:289 - Restore cursor
+2019-11-23 10:22:39,580 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:22:39,581 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:22:39,584 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:22:39,585 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:22:39,587 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:22:39,589 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:22:39,661 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:22:39,678 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:22:39,678 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:22:39,689 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:22:39,689 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:22:39,689 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:22:39,689 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:22:39,707 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:23:03,742 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:23:04,434 [INFO] MainUpdater:2040 - connection check result : 10
+2019-11-23 10:23:04,434 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-11-23 10:23:04,518 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-23 10:23:04,519 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-23 10:23:04,521 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-23 10:23:04,524 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 458973928 Bytes (627048448)
+2019-11-23 10:23:04,524 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-23 10:23:04,524 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-23 10:23:04,524 [INFO] OpenFileManager:269 - Change cursor
+2019-11-23 10:23:08,928 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (FLatency) has Id (AdvancedSettings) currently not set
+2019-11-23 10:23:08,928 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-11-23 10:23:08,928 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2019-11-23 10:23:09,313 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 459963528 Bytes (627048448)
+2019-11-23 10:23:09,369 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-11-23 10:23:09,370 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.2.0
+2019-11-23 10:23:09,370 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.0.0
+2019-11-23 10:23:09,370 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.4.1
+2019-11-23 10:23:09,370 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.0.0
+2019-11-23 10:23:09,370 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-11-23 10:23:09,370 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-11-23 10:23:09,370 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-11-23 10:23:09,557 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-23 10:23:09,558 [INFO] PinOutPanel:1367 - setPackage(STM32F334R8Tx,LQFP64)
+2019-11-23 10:23:10,111 [INFO] UtilMem:74 - Before build in PCC Used Memory: 331860048 Bytes (627048448)
+2019-11-23 10:23:10,312 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/felip/.stm32cubemx/plugins/power
+2019-11-23 10:23:10,312 [INFO] UtilMem:74 - After build in PCC Used Memory: 340246608 Bytes (627048448)
+2019-11-23 10:23:10,312 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:23:10,312 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,312 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,312 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,312 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,312 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,312 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,312 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,312 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,312 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,312 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,312 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,312 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,312 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,327 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,327 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,327 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,328 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,328 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,328 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:23:10,329 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:23:10,345 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:23:10,345 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:23:10,345 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:23:10,363 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:23:10,364 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:23:10,369 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:23:10,376 [INFO] OpenFileManager:289 - Restore cursor
+2019-11-23 10:23:10,385 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:23:10,385 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:23:10,385 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:23:10,385 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:23:10,394 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:23:10,394 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:23:10,470 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:23:10,483 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:23:10,483 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:23:10,483 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:23:10,483 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:23:10,483 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:23:10,483 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:23:10,501 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:31:48,872 [INFO] MainUpdater:2040 - connection check result : 10
+2019-11-23 10:31:48,872 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-11-23 10:31:49,013 [INFO] I2cTimingTraitement:320 - 0x2000090E
+2019-11-23 10:31:49,013 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-23 10:31:49,013 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-23 10:31:49,013 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-23 10:31:49,013 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 517769664 Bytes (627048448)
+2019-11-23 10:31:49,013 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-23 10:31:49,013 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-23 10:31:49,013 [INFO] OpenFileManager:269 - Change cursor
+2019-11-23 10:31:51,059 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (FLatency) has Id (AdvancedSettings) currently not set
+2019-11-23 10:31:51,059 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-11-23 10:31:51,059 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2019-11-23 10:31:51,200 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 299817032 Bytes (846200832)
+2019-11-23 10:31:51,216 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-11-23 10:31:51,216 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.2.0
+2019-11-23 10:31:51,216 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.0.0
+2019-11-23 10:31:51,216 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.4.1
+2019-11-23 10:31:51,216 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.0.0
+2019-11-23 10:31:51,216 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-11-23 10:31:51,216 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-11-23 10:31:51,216 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-11-23 10:31:51,309 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-23 10:31:51,309 [INFO] PinOutPanel:1367 - setPackage(STM32F334R8Tx,LQFP64)
+2019-11-23 10:31:51,559 [INFO] UtilMem:74 - Before build in PCC Used Memory: 395010992 Bytes (846200832)
+2019-11-23 10:31:51,622 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/felip/.stm32cubemx/plugins/power
+2019-11-23 10:31:51,622 [INFO] UtilMem:74 - After build in PCC Used Memory: 403399600 Bytes (846200832)
+2019-11-23 10:31:51,637 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:31:51,637 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:31:51,637 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:31:51,637 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:31:51,653 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:31:51,653 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:31:51,653 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:31:51,653 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:31:51,653 [INFO] OpenFileManager:289 - Restore cursor
+2019-11-23 10:31:51,653 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:31:51,653 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:31:51,653 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:31:51,653 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:31:51,669 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:31:51,669 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:31:51,700 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:31:51,700 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:31:51,700 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:31:51,700 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:31:51,700 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:31:51,700 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:31:51,700 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:31:51,715 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:35:59,255 [INFO] MainUpdater:2040 - connection check result : 10
+2019-11-23 10:35:59,255 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-11-23 10:35:59,318 [INFO] I2cTimingTraitement:320 - 0x2000090E
+2019-11-23 10:35:59,333 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-23 10:35:59,333 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-23 10:35:59,333 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-23 10:35:59,333 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 709372064 Bytes (892338176)
+2019-11-23 10:35:59,333 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-23 10:35:59,333 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-23 10:35:59,333 [INFO] OpenFileManager:269 - Change cursor
+2019-11-23 10:36:01,098 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (FLatency) has Id (AdvancedSettings) currently not set
+2019-11-23 10:36:01,098 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-11-23 10:36:01,098 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2019-11-23 10:36:01,208 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 707499560 Bytes (892338176)
+2019-11-23 10:36:01,223 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-11-23 10:36:01,223 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.2.0
+2019-11-23 10:36:01,223 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.0.0
+2019-11-23 10:36:01,223 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.4.1
+2019-11-23 10:36:01,223 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.0.0
+2019-11-23 10:36:01,223 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-11-23 10:36:01,223 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-11-23 10:36:01,223 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-11-23 10:36:01,286 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-23 10:36:01,286 [INFO] PinOutPanel:1367 - setPackage(STM32F334R8Tx,LQFP64)
+2019-11-23 10:36:01,505 [INFO] UtilMem:74 - Before build in PCC Used Memory: 370153880 Bytes (892338176)
+2019-11-23 10:36:01,583 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/felip/.stm32cubemx/plugins/power
+2019-11-23 10:36:01,583 [INFO] UtilMem:74 - After build in PCC Used Memory: 378542488 Bytes (892338176)
+2019-11-23 10:36:01,583 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:36:01,583 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:36:01,598 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:36:01,598 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:36:01,598 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:36:01,598 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:36:01,598 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:36:01,598 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:36:01,614 [INFO] OpenFileManager:289 - Restore cursor
+2019-11-23 10:36:01,614 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:36:01,614 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:36:01,614 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:36:01,614 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:36:01,614 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:36:01,614 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:36:01,645 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:36:01,661 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:36:01,661 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:36:01,661 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:36:01,661 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:36:01,661 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:36:01,661 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:36:01,661 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:58:09,925 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:58:11,862 [INFO] MainUpdater:2040 - connection check result : 10
+2019-11-23 10:58:11,862 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-11-23 10:58:11,925 [INFO] I2cTimingTraitement:320 - 0x2000090E
+2019-11-23 10:58:11,941 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-23 10:58:11,941 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-23 10:58:11,941 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-23 10:58:11,941 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 771047336 Bytes (892338176)
+2019-11-23 10:58:11,941 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-11-23 10:58:11,941 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.30
+2019-11-23 10:58:11,941 [INFO] OpenFileManager:269 - Change cursor
+2019-11-23 10:58:13,690 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (FLatency) has Id (AdvancedSettings) currently not set
+2019-11-23 10:58:13,690 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-11-23 10:58:13,690 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (TIM2Freq_Value)
+2019-11-23 10:58:13,815 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 376742296 Bytes (892338176)
+2019-11-23 10:58:13,831 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-11-23 10:58:13,831 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.2.0
+2019-11-23 10:58:13,831 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.0.0
+2019-11-23 10:58:13,831 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.4.1
+2019-11-23 10:58:13,831 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.0.0
+2019-11-23 10:58:13,831 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2019-11-23 10:58:13,831 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.1.0
+2019-11-23 10:58:13,831 [INFO] ThirdParty:912 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.0
+2019-11-23 10:58:13,893 [INFO] PinOutPanel:1367 - setPackage(No Configuration,No Configuration)
+2019-11-23 10:58:13,893 [INFO] PinOutPanel:1367 - setPackage(STM32F334R8Tx,LQFP64)
+2019-11-23 10:58:14,128 [INFO] UtilMem:74 - Before build in PCC Used Memory: 471416104 Bytes (892338176)
+2019-11-23 10:58:14,190 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/felip/.stm32cubemx/plugins/power
+2019-11-23 10:58:14,190 [INFO] UtilMem:74 - After build in PCC Used Memory: 479276288 Bytes (892338176)
+2019-11-23 10:58:14,206 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,206 [INFO] IPUIPlugin:63 - create IPUIPlugin
+2019-11-23 10:58:14,221 [INFO] ApiDbMcu:444 - Load IP Config File for FREERTOS
+2019-11-23 10:58:14,221 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:58:14,221 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:58:14,237 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:58:14,237 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:58:14,237 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:58:14,237 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:58:14,237 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:58:14,237 [INFO] OpenFileManager:289 - Restore cursor
+2019-11-23 10:58:14,252 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:58:14,252 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:58:14,252 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:58:14,252 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:58:14,252 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:58:14,252 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:58:14,284 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2019-11-23 10:58:14,299 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:58:14,299 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:58:14,299 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:58:14,299 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:58:14,299 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isRootSelectionSupported
+2019-11-23 10:58:14,299 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] method name===============isUnderRootDefaultMode
+2019-11-23 10:58:14,299 [INFO] BlockDiagram:1818 - stop enableDisableButtons
