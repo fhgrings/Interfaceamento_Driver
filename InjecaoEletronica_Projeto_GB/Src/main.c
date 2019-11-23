@@ -492,11 +492,11 @@ void StartLeituraSens(void const * argument)
 void StartProcessamen(void const * argument)
 {
   /* USER CODE BEGIN StartProcessamen */
-	float aceleracaoLocal;
-	uint8_t temperaturaLocal;
-	uint8_t oxigenioLocal;
-	uint8_t qntCombustivelLocal;
-	uint8_t constantesLocal[3];
+	int aceleracaoLocal;
+	int temperaturaLocal;
+	int oxigenioLocal;
+	int qntCombustivelLocal;
+	int constantesLocal[3];
 
   /* Infinite loop */
   for(;;)
@@ -520,7 +520,7 @@ void StartProcessamen(void const * argument)
 
 
 
-	qntCombustivelLocal = aceleracaoLocal * 50 + (30 - temperaturaLocal * 30) + oxigenioLocal * 20;
+	qntCombustivelLocal = (aceleracaoLocal * 5) + (3 * (100 - oxigenioLocal)) + (oxigenioLocal * 2);
 
 
 	osMutexWait(MtxQntCombustivelHandle, 1000);
@@ -549,7 +549,7 @@ void StartProcessamen(void const * argument)
 void StartAcionamento(void const * argument)
 {
   /* USER CODE BEGIN StartAcionamento */
-	uint8_t qntCombustivelLocal;
+	int qntCombustivelLocal;
   /* Infinite loop */
   for(;;)
   {
@@ -557,25 +557,25 @@ void StartAcionamento(void const * argument)
 	qntCombustivelLocal = qntCombustivelGlobal;
 	osMutexRelease(MtxQntCombustivelHandle);
 
-	if(qntCombustivelLocal < 33) {
+	if(qntCombustivelLocal < 330) {
 	  HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin, 1);
 	  HAL_GPIO_WritePin(LED_2_GPIO_Port, LED_2_Pin, 0);
 	  HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, 0);
-//	  HAL_UART_Transmit(&huart2, "taskAcionamento 33\r\n", 33, 1000);
+//	  HAL_UART_Transmit(&huart2, "Baixo 33\r\n", 33, 1000);
 	}
 
-	if(qntCombustivelLocal < 66 && qntCombustivelLocal >= 33) {
+	if(qntCombustivelLocal < 660 && qntCombustivelLocal >= 330) {
 	  HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin, 0);
 	  HAL_GPIO_WritePin(LED_2_GPIO_Port, LED_2_Pin, 1);
 	  HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, 0);
-//	  HAL_UART_Transmit(&huart2, "taskAcionamento 55\r\n", 33, 1000);
+//	  HAL_UART_Transmit(&huart2, "Medio 55\r\n", 33, 1000);
 	}
 
-	if(qntCombustivelLocal >= 66) {
+	if(qntCombustivelLocal >= 660) {
 	  HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin, 0);
 	  HAL_GPIO_WritePin(LED_2_GPIO_Port, LED_2_Pin, 0);
 	  HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, 1);
-//	  HAL_UART_Transmit(&huart2, "taskAcionamento 66\r\n", 33, 1000);
+//	  HAL_UART_Transmit(&huart2, "Alto 3\r\n", 33, 1000);
 	}
 
     osDelay(10);
@@ -626,7 +626,7 @@ void StartEscritaDisplay(void const * argument)
 	  sprintf(bufferOxigenio, "Teste: %d\r\n\r\n", informacoesLocal[1]);
 
 
-//	  HAL_UART_Transmit(&huart2, bufferAcelerador, 25, 1000);
+	  HAL_UART_Transmit(&huart2, bufferAcelerador, 25, 1000);
 //	  HAL_UART_Transmit(&huart2, bufferOxigenio, 17, 1000);
 
 //	  LCD_Write_String(0, 0, bufferAcelerador);
