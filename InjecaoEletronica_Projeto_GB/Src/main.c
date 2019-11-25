@@ -510,17 +510,7 @@ void StartProcessamen(void const * argument)
 
 
 
-
-//	osMutexWait(MtxConstantesHandle, 1000);
-	constantesLocal[0] = constantesGlobal[0];
-	constantesLocal[1] = constantesGlobal[1];
-	constantesLocal[2] = constantesGlobal[2];
-//	osMutexRelease(MtxConstantesHandle);
-
-
-
-
-	qntCombustivelLocal = (aceleracaoLocal * 5) + (3 * (100 - oxigenioLocal)) + (oxigenioLocal * 2);
+	qntCombustivelLocal = (aceleracaoLocal * 5) + (3 * (100 - oxigenioLocal)) + (temperaturaLocal * 2);
 
 
 	osMutexWait(MtxQntCombustivelHandle, 1000);
@@ -611,7 +601,7 @@ void StartEscritaMemoria(void const * argument)
 void StartEscritaDisplay(void const * argument)
 {
   /* USER CODE BEGIN StartEscritaDisplay */
-	uint8_t informacoesLocal[2];
+	int informacoesLocal[2];
 	uint8_t bufferOxigenio[50];
 	uint8_t bufferAcelerador[50];
   /* Infinite loop */
