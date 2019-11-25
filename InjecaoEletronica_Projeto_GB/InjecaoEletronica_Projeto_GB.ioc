@@ -1,7 +1,7 @@
 #MicroXplorer Configuration settings - do not modify
 FREERTOS.FootprintOK=true
 FREERTOS.IPParameters=Tasks01,configUSE_RECURSIVE_MUTEXES,configUSE_COUNTING_SEMAPHORES,configTOTAL_HEAP_SIZE,FootprintOK,Mutexes01
-FREERTOS.Mutexes01=MtxAcelerador,Dynamic,NULL;MtxQntCombustivel,Dynamic,NULL;MtxInformacoes,Dynamic,NULL
+FREERTOS.Mutexes01=MtxAcelerador,Dynamic,NULL;MtxQntCombustivel,Dynamic,NULL;MtxInformacoes,Dynamic,NULL;MtxSPI,Dynamic,NULL
 FREERTOS.Tasks01=taskLeituraAcel,2,128,StartLeituraAcel,Default,NULL,Dynamic,NULL,NULL;taskProcessamen,2,128,StartProcessamen,Default,NULL,Dynamic,NULL,NULL;taskAcionamento,2,128,StartAcionamento,Default,NULL,Dynamic,NULL,NULL;taskEscritaDisp,-3,128,StartEscritaDisplay,Default,NULL,Dynamic,NULL,NULL
 FREERTOS.configTOTAL_HEAP_SIZE=4808
 FREERTOS.configUSE_COUNTING_SEMAPHORES=1

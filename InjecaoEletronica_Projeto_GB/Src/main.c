@@ -49,15 +49,13 @@ SPI_HandleTypeDef hspi1;
 UART_HandleTypeDef huart2;
 
 osThreadId taskLeituraAcelHandle;
-osThreadId taskLeituraSensHandle;
 osThreadId taskProcessamenHandle;
 osThreadId taskAcionamentoHandle;
-osThreadId taskEscritaMemoHandle;
 osThreadId taskEscritaDispHandle;
 osMutexId MtxAceleradorHandle;
 osMutexId MtxQntCombustivelHandle;
 osMutexId MtxInformacoesHandle;
-osMutexId MtxConstantesHandle;
+osMutexId MtxSPIHandle;
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -68,10 +66,8 @@ static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_SPI1_Init(void);
 void StartLeituraAcel(void const * argument);
-void StartLeituraSens(void const * argument);
 void StartProcessamen(void const * argument);
 void StartAcionamento(void const * argument);
-void StartEscritaMemoria(void const * argument);
 void StartEscritaDisplay(void const * argument);
 
 /* USER CODE BEGIN PFP */
@@ -130,7 +126,6 @@ int main(void)
   osMutexDef(MtxAcelerador);
   MtxAceleradorHandle = osMutexCreate(osMutex(MtxAcelerador));
 
-
   /* definition and creation of MtxQntCombustivel */
   osMutexDef(MtxQntCombustivel);
   MtxQntCombustivelHandle = osMutexCreate(osMutex(MtxQntCombustivel));
@@ -139,9 +134,9 @@ int main(void)
   osMutexDef(MtxInformacoes);
   MtxInformacoesHandle = osMutexCreate(osMutex(MtxInformacoes));
 
-  /* definition and creation of MtxConstantes */
-  osMutexDef(MtxConstantes);
-  MtxConstantesHandle = osMutexCreate(osMutex(MtxConstantes));
+  /* definition and creation of MtxSPI */
+  osMutexDef(MtxSPI);
+  MtxSPIHandle = osMutexCreate(osMutex(MtxSPI));
 
   /* USER CODE BEGIN RTOS_MUTEX */
   /* add mutexes, ... */
@@ -161,33 +156,27 @@ int main(void)
 
   /* Create the thread(s) */
   /* definition and creation of taskLeituraAcel */
-  osThreadDef(taskLeituraAcel, StartLeituraAcel, osPriorityNormal, 0, 128);
+  osThreadDef(taskLeituraAcel, StartLeituraAcel, osPriorityHigh, 0, 128);
   taskLeituraAcelHandle = osThreadCreate(osThread(taskLeituraAcel), NULL);
 
-  /* definition and creation of taskLeituraSens */
-  osThreadDef(taskLeituraSens, StartLeituraSens, osPriorityNormal, 0, 128);
-  taskLeituraSensHandle = osThreadCreate(osThread(taskLeituraSens), NULL);
-
   /* definition and creation of taskProcessamen */
-  osThreadDef(taskProcessamen, StartProcessamen, osPriorityNormal, 0, 128);
+  osThreadDef(taskProcessamen, StartProcessamen, osPriorityHigh, 0, 128);
   taskProcessamenHandle = osThreadCreate(osThread(taskProcessamen), NULL);
 
   /* definition and creation of taskAcionamento */
-  osThreadDef(taskAcionamento, StartAcionamento, osPriorityNormal, 0, 128);
+  osThreadDef(taskAcionamento, StartAcionamento, osPriorityHigh, 0, 128);
   taskAcionamentoHandle = osThreadCreate(osThread(taskAcionamento), NULL);
 
-  /* definition and creation of taskEscritaMemo */
-  osThreadDef(taskEscritaMemo, StartEscritaMemoria, osPriorityNormal, 0, 128);
-  taskEscritaMemoHandle = osThreadCreate(osThread(taskEscritaMemo), NULL);
-
   /* definition and creation of taskEscritaDisp */
-  osThreadDef(taskEscritaDisp, StartEscritaDisplay, osPriorityNormal, 0, 128);
+  osThreadDef(taskEscritaDisp, StartEscritaDisplay, osPriorityHigh, 0, 128);
   taskEscritaDispHandle = osThreadCreate(osThread(taskEscritaDisp), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
-//  LCD_Init();
-//  LCD_Write_String(0, 0, "Teste");
+  osMutexWait(MtxSPIHandle, 1000);
+  LCD_Init();
+  LCD_Write_String(0, 0, "Teste");
+  osMutexRelease(MtxSPIHandle);
   /* USER CODE END RTOS_THREADS */
 
   /* Start scheduler */
@@ -386,6 +375,13 @@ static void MX_GPIO_Init(void)
 /* USER CODE END Header_StartLeituraAcel */
 void StartLeituraAcel(void const * argument)
 {
+    
+    
+    
+    
+    
+    
+
   /* USER CODE BEGIN 5 */
 	uint8_t aceleradorSPI = 0;
 	int aceleradorLocal = 0;
@@ -399,11 +395,11 @@ void StartLeituraAcel(void const * argument)
   for(;;)
   {
 	  aceleradorLocal = 0;
+	  osMutexWait(MtxSPIHandle, 1000);
 	  HAL_GPIO_WritePin(EN_ACELERADOR_GPIO_Port, EN_ACELERADOR_Pin, 0);
-
 	  HAL_SPI_Receive(&hspi1, &aceleradorSPI, 1, 1000);
-
 	  HAL_GPIO_WritePin(EN_ACELERADOR_GPIO_Port, EN_ACELERADOR_Pin, 1);
+	  osMutexRelease(MtxSPIHandle);
 
 
 
@@ -424,9 +420,12 @@ void StartLeituraAcel(void const * argument)
 	  sensorOxg_TempLocal[0] = 0;
 	  sensorOxg_TempLocal[1] = 0;
 
+
+	  osMutexWait(MtxSPIHandle, 1000);
 	  HAL_GPIO_WritePin(EN_OXIGENIO_GPIO_Port, EN_OXIGENIO_Pin, 0);
 	  HAL_SPI_Receive(&hspi1, &sensorOxg_TempSPI[0], 1, 1000);
 	  HAL_GPIO_WritePin(EN_OXIGENIO_GPIO_Port, EN_OXIGENIO_Pin, 1);
+	  osMutexRelease(MtxSPIHandle);
 
 	  if(sensorOxg_TempSPI[0] > 128){
 
@@ -442,9 +441,12 @@ void StartLeituraAcel(void const * argument)
 	  }
 
 
+
+	  osMutexWait(MtxSPIHandle, 1000);
 	  HAL_GPIO_WritePin(EN_TEMPERATURA_GPIO_Port, EN_TEMPERATURA_Pin, 0);
 	  HAL_SPI_Receive(&hspi1, &sensorOxg_TempSPI[1], 1, 1000);
 	  HAL_GPIO_WritePin(EN_TEMPERATURA_GPIO_Port, EN_TEMPERATURA_Pin, 1);
+	  osMutexRelease(MtxSPIHandle);
 
 	  if(sensorOxg_TempSPI[1] > 128) {
 
@@ -458,28 +460,9 @@ void StartLeituraAcel(void const * argument)
 		  sensorOxg_TempGlobal[1] = sensorOxg_TempLocal[1];
 		  osMutexRelease(MtxAceleradorHandle);
 	  }
-	  HAL_Delay(10);
+	  osDelay(10);
   }
-  /* USER CODE END 5 */
-}
-
-/* USER CODE BEGIN Header_StartLeituraSens */
-/**
-* @brief Function implementing the taskLeituraSens thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_StartLeituraSens */
-void StartLeituraSens(void const * argument)
-{
-  /* USER CODE BEGIN StartLeituraSens */
-
-  /* Infinite loop */
-  for(;;)
-  {
-	  HAL_Delay(10);
-  }
-  /* USER CODE END StartLeituraSens */
+  /* USER CODE END 5 */ 
 }
 
 /* USER CODE BEGIN Header_StartProcessamen */
@@ -551,44 +534,23 @@ void StartAcionamento(void const * argument)
 	  HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin, 1);
 	  HAL_GPIO_WritePin(LED_2_GPIO_Port, LED_2_Pin, 0);
 	  HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, 0);
-//	  HAL_UART_Transmit(&huart2, "Baixo 33\r\n", 33, 1000);
 	}
 
 	if(qntCombustivelLocal < 660 && qntCombustivelLocal >= 330) {
 	  HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin, 0);
 	  HAL_GPIO_WritePin(LED_2_GPIO_Port, LED_2_Pin, 1);
 	  HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, 0);
-//	  HAL_UART_Transmit(&huart2, "Medio 55\r\n", 33, 1000);
 	}
 
 	if(qntCombustivelLocal >= 660) {
 	  HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin, 0);
 	  HAL_GPIO_WritePin(LED_2_GPIO_Port, LED_2_Pin, 0);
 	  HAL_GPIO_WritePin(LED_3_GPIO_Port, LED_3_Pin, 1);
-//	  HAL_UART_Transmit(&huart2, "Alto 3\r\n", 33, 1000);
 	}
 
     osDelay(10);
   }
   /* USER CODE END StartAcionamento */
-}
-
-/* USER CODE BEGIN Header_StartEscritaMemoria */
-/**
-* @brief Function implementing the taskEscritaMemo thread.
-* @param argument: Not used
-* @retval None
-*/
-/* USER CODE END Header_StartEscritaMemoria */
-void StartEscritaMemoria(void const * argument)
-{
-  /* USER CODE BEGIN StartEscritaMemoria */
-  /* Infinite loop */
-  for(;;)
-  {
-	  osDelay(10);
-  }
-  /* USER CODE END StartEscritaMemoria */
 }
 
 /* USER CODE BEGIN Header_StartEscritaDisplay */
@@ -616,12 +578,14 @@ void StartEscritaDisplay(void const * argument)
 	  sprintf(bufferOxigenio, "Teste: %d\r\n\r\n", informacoesLocal[1]);
 
 
-	  HAL_UART_Transmit(&huart2, bufferAcelerador, 25, 1000);
+//	  HAL_UART_Transmit(&huart2, bufferAcelerador, 25, 1000);
 //	  HAL_UART_Transmit(&huart2, bufferOxigenio, 17, 1000);
 
-//	  LCD_Write_String(0, 0, bufferAcelerador);
+	  osMutexWait(MtxSPIHandle, 1000);
+	  LCD_Write_String(0, 0, bufferAcelerador);
+	  osMutexRelease(MtxSPIHandle);
 //	  LCD_Write_String(0, 1, bufferOxigenio);
-	  osDelay(10);
+	  osDelay(1000);
   }
   /* USER CODE END StartEscritaDisplay */
 }
